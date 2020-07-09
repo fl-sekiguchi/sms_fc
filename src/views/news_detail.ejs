@@ -1,0 +1,35 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'news_detail.css',
+    script: 'index.js',
+    image: '/images',
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main" role="main">
+  <div class="wrapper">
+    <div class="base news__base">
+      <div class="inner">
+        <%- include('../components/news_detail/head/head.ejs', { conf }) %>
+        <div class="row news-detail">
+          <div class="col8">
+            <%- include('../components/news_detail/article/article.ejs', { conf }) %>
+          </div>
+          <div class="col4">
+            <%- include('../components/news_detail/posts/posts.ejs', { conf }) %>
+            <%- include('../components/parts/filter/category.ejs', { conf, place: "sidebar" }) %>
+            <%- include('../components/parts/filter/month.ejs', { conf, place: "sidebar" }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

@@ -1,7 +1,8 @@
 .banner {
-  .banner__wrapper {
+  .banner__base {
     background-color: var(--color5);
-    padding: 60px 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     .banner__items {
       display: flex;
       margin-left: -30px;

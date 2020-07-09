@@ -1,8 +1,9 @@
 .link {
   margin-top: 70px;
-  .link__wrapper {
+  .link__base {
     background-color: var(--color3);
-    padding: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     position: relative;
     overflow: hidden;
     .link__items {

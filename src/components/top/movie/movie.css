@@ -1,8 +1,9 @@
 .movie {
   margin-top: 70px;
-  .movie__wrapper {
+  .movie__base {
     background-color: var(--color3);
-    padding: 70px 70px 85px;
+    padding-top: 70px;
+    padding-bottom: 85px;
     position: relative;
     .movie-bt {
       position: absolute;

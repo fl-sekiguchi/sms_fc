@@ -6,10 +6,3 @@
 @import "../components/top/movie/movie.css";
 @import "../components/top/news/news.css";
 @import "../components/top/link/link.css";
-
-.container {
-  @media (--not-sp) {
-    width: calc(1280 / 1600 * 100%);
-    max-width: 1280px;
-  }
-}
