@@ -1,0 +1,50 @@
+@import "libraries-frontend-framelunch/css/_reset.css";
+@import "./common/_variables.css";
+@import "./common/_grid.css";
+@import "../components/header/header.css";
+@import "../components/footer/footer.css";
+@import "../components/menu/menu.css";
+
+.-hidden-pc {
+    @media (--not-sp) {
+        display: none !important;
+    }
+}
+
+.-hidden-sp {
+    @media (--sp) {
+        display: none !important;
+    }
+}
+
+.-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+body {
+  background-color: var(--color1)
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  @media (--not-sp) {
+    width: calc(1140 / 1280 * 100%);
+    max-width: 1140px;
+  }
+
+  @media (--sp) {
+    width: calc(100% - 20px);
+  }
+}

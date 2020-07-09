@@ -1,0 +1,8 @@
+node_modules/**
+.tmp/**
+build/**
+tools/**
+_template/**
+assets/**
+src/assets/**
+gulpfile.js

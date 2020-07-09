@@ -1,0 +1,41 @@
+.link {
+  margin-top: 70px;
+  .link__wrapper {
+    background-color: var(--color3);
+    padding: 70px;
+    position: relative;
+    overflow: hidden;
+    .link__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -50px;
+      margin-left: -30px;
+      .link__items-item {
+        width: 20%;
+        margin-top: 50px;
+        padding-left: 30px;
+        a {
+          background-color: #fff;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          padding-bottom: 40px;
+
+          .link-icon {
+            svg {
+              fill: var(--color1);
+            }
+          }
+
+          .link-text {
+            font-size: 27px;
+            color: var(--color1);
+            font-family: var(--fontMontserrat);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

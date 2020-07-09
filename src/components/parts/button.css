@@ -1,0 +1,13 @@
+.button {
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fontMontserrat);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--color4);
+  font-size: 24px;
+}

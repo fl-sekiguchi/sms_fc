@@ -1,0 +1,25 @@
+  <div class="link">
+    <div class="container">
+      <div class="link__wrapper">
+        <ul class="link__items">
+          <%
+            const links = [
+              { include: "news", text: "NEWS", href: "" },
+              { include: "news", text: "NEWS", href: "" },
+              { include: "news", text: "NEWS", href: "" },
+              { include: "news", text: "NEWS", href: "" },
+              { include: "news", text: "NEWS", href: "" },
+              { include: "news", text: "NEWS", href: "" },
+              { include: "news", text: "NEWS", href: "" },
+            ]
+          %>
+          <% links.forEach(function (value, key) { _%>
+          <li class="link__items-item"><a href="">
+            <div class="link-icon link-icon--<%- value.include %>"><%- include('../../include/icon/'+value.include+'.ejs', { conf }) %></div>
+            <p class="link-text">NEWS</p>
+          </a></li>
+          <% }); _%>
+        </ul>
+      </div>
+    </div>
+  </div>

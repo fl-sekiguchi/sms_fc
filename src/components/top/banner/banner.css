@@ -1,0 +1,15 @@
+.banner {
+  .banner__wrapper {
+    background-color: var(--color5);
+    padding: 60px 70px;
+    .banner__items {
+      display: flex;
+      margin-left: -30px;
+
+      .banner__items-item {
+        padding-left: 30px;
+        width: calc(100% / 3);
+      }
+    }
+  }
+}

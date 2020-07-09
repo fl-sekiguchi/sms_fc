@@ -1,0 +1,15 @@
+@import "./common/_global.css";
+@import "../components/parts/button.css";
+@import "../components/parts/date.css";
+@import "../components/top/login/login.css";
+@import "../components/top/banner/banner.css";
+@import "../components/top/movie/movie.css";
+@import "../components/top/news/news.css";
+@import "../components/top/link/link.css";
+
+.container {
+  @media (--not-sp) {
+    width: calc(1280 / 1600 * 100%);
+    max-width: 1280px;
+  }
+}

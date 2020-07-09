@@ -1,0 +1,14 @@
+.header {
+  padding-top: 30px;
+  .header-logo {
+    text-align: center;
+  }
+
+  .header-logo__subtitle {
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--fontMontserrat);
+  }
+}

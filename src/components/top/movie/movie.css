@@ -1,0 +1,62 @@
+.movie {
+  margin-top: 70px;
+  .movie__wrapper {
+    background-color: var(--color3);
+    padding: 70px 70px 85px;
+    position: relative;
+    .movie-bt {
+      position: absolute;
+      width: 200px;
+      top: 70px;
+      right: 70px;
+    }
+    .movie__content {
+      .movie-title {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        font-family: var(--fontMontserrat);
+        color: var(--color4);
+        letter-spacing: .1em;
+      }
+      .movie__cover {
+        margin-top: 50px;
+        position: relative;
+        .movie__cover-date {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .movie__cover-play {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: calc(201 / 1144 * 100%);
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .movie__texts {
+        background-color: #fff;
+        padding: 30px;
+        text-align: center;
+        .movie__texts-title {
+          font-size: 36px;
+          color: var(--color4);
+          font-family: var(--fontMontserrat);
+          font-weight: 700;
+          letter-spacing: .05em;
+        }
+        .movie__texts-text {
+          font-size: 18px;
+          color: var(--color4);
+          font-family: var(--fontNotoSansJP);
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
