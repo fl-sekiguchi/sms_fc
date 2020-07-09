@@ -1,0 +1,33 @@
+<div class="photo__list">
+  <div class="row">
+    <%
+      const list = [
+        { date: "2020.01.01", image: "photo_image.jpg", tags: [ "NEWS", "MEDIA", "SAMPLE" ], text: "テキストテキストテキストテキストテキストテキストテキストテキスト" },
+        { date: "2020.01.01", image: "photo_image.jpg", tags: [ "NEWS", "MEDIA", "SAMPLE" ], text: "テキストテキストテキストテキストテキストテキストテキストテキスト" },
+        { date: "2020.01.01", image: "photo_image.jpg", tags: [ "NEWS", "MEDIA", "SAMPLE" ], text: "テキストテキストテキストテキストテキストテキストテキストテキスト" },
+        { date: "2020.01.01", image: "photo_image.jpg", tags: [ "NEWS", "MEDIA", "SAMPLE" ], text: "テキストテキストテキストテキストテキストテキストテキストテキスト" },
+        { date: "2020.01.01", image: "photo_image.jpg", tags: [ "NEWS", "MEDIA", "SAMPLE" ], text: "テキストテキストテキストテキストテキストテキストテキストテキスト" },
+        { date: "2020.01.01", image: "photo_image.jpg", tags: [ "NEWS", "MEDIA", "SAMPLE" ], text: "テキストテキストテキストテキストテキストテキストテキストテキスト" },
+      ]
+    %>
+    <% list.forEach(function (value, key) { _%>
+    <div class="col4 photo__item">
+      <a class="photo-inner" href="">
+        <p class="date photo__item-date">2020.01.01</p>
+        <div class="photo__item__cover">
+          <p class="photo__item__cover-image"><img src="<%- conf.image %>/<%= projectName %>/<%- value.image %>" alt=""></p>
+          <div class="photo__item__cover-play"><img src="<%- conf.image %>/common/icon_play.png" alt=""></div>
+        </div>
+        <div class="photo__body">
+          <ul class="photo__tags">
+            <li class="photo__tags-item">NEWS</li>
+            <li class="photo__tags-item">MEDIA</li>
+            <li class="photo__tags-item">SAMPLE</li>
+          </ul>
+          <p class="photo__item-text">テキストテテキストテキストテキストテキストキスト</p>
+        </div>
+      </a>
+    </div>
+    <% }); _%>
+  </div>
+</div>
