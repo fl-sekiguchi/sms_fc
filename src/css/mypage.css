@@ -2,7 +2,6 @@
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
-@import "../components/mypage/head/head.css";
 @import "../components/mypage/card/card.css";
 @import "../components/mypage/favorite/favorite.css";
 @import "../components/mypage/chackin/chackin.css";
@@ -12,8 +11,4 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--color5);
-}
-
-.mypage-detail {
-  margin-top: 80px;
 }

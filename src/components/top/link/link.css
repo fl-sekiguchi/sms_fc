@@ -22,14 +22,19 @@
           text-decoration: none;
           text-align: center;
           padding-bottom: 40px;
+          padding-top: 40px;
 
           .link-icon {
+            margin-left: auto;
+            margin-right: auto;
+            width: calc(83 / 204 * 100%);
             svg {
               fill: var(--color1);
             }
           }
 
           .link-text {
+            margin-top: 10px;
             font-size: 27px;
             color: var(--color1);
             font-family: var(--fontMontserrat);

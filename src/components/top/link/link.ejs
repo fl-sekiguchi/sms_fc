@@ -5,18 +5,20 @@
           <%
             const links = [
               { include: "news", text: "NEWS", href: "" },
-              { include: "news", text: "NEWS", href: "" },
-              { include: "news", text: "NEWS", href: "" },
-              { include: "news", text: "NEWS", href: "" },
-              { include: "news", text: "NEWS", href: "" },
-              { include: "news", text: "NEWS", href: "" },
-              { include: "news", text: "NEWS", href: "" },
+              { include: "movie", text: "MOVIE", href: "" },
+              { include: "photo", text: "PHOTO", href: "" },
+              { include: "tickets", text: "TICKETS", href: "" },
+              { include: "blog", text: "BLOG", href: "" },
+              { include: "live", text: "LIVE", href: "" },
+              { include: "radio", text: "RADIO", href: "" },
+              { include: "schedule", text: "SCHEDULE", href: "" },
+              { include: "special", text: "SPECIAL", href: "" },
             ]
           %>
           <% links.forEach(function (value, key) { _%>
           <li class="link__items-item"><a href="">
             <div class="link-icon link-icon--<%- value.include %>"><%- include('../../include/icon/'+value.include+'.ejs', { conf }) %></div>
-            <p class="link-text">NEWS</p>
+            <p class="link-text"><%- value.text %></p>
           </a></li>
           <% }); _%>
         </ul>

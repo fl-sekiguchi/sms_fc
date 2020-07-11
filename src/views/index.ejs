@@ -1,0 +1,44 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'live.css',
+    script: 'index.js',
+    image: '/images',
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+
+<main id="main" class="main" role="main">
+  <%
+    const list = [
+      { url: "top.html", title: "TOP" },
+      { url: "news.html", title: "NEWS" },
+      { url: "news_detail.html", title: "NEWS DETAIL" },
+      { url: "photo.html", title: "PHOTO" },
+      { url: "photo_detail.html", title: "PHOTO DETAIL" },
+      { url: "movie.html", title: "MOVIE" },
+      { url: "movie_detail.html", title: "MOVIE DETAIL" },
+      { url: "blog.html", title: "BLOG" },
+      { url: "biography.html", title: "BIOGRAPHY" },
+      { url: "discography2.html", title: "DISCOGRAPHY2" },
+      { url: "ticket.html", title: "TICKET" },
+      { url: "ticket_detail.html", title: "TICKET DETAIL" },
+      { url: "schedule.html", title: "SCHEDULE" },
+      { url: "schedule_detail.html", title: "SCHEDULE DETAIL" },
+      { url: "mypage.html", title: "MYPAGE" },
+      { url: "live.html", title: "LIVE" },
+      { url: "form.html", title: "FORM" },
+      { url: "form_confirm.html", title: "FORM COMFIRM" },
+      { url: "form_finish.html", title: "FORM FINISH" },
+    ];
+  %>
+  <ul>
+    <% list.forEach(function (value, key) { _%>
+    <li><a href="<%- value.url %>" target="_blank" style="font-size: 30px;"><%- value.title %></a></li>
+    <% }); _%>
+  </ul>
+</main>
+
+<%- include('./common/_foot.ejs', { conf }) %>

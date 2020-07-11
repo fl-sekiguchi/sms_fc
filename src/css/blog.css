@@ -1,0 +1,12 @@
+@import "./common/_global.css";
+@import "../components/parts/button.css";
+@import "../components/parts/date.css";
+@import "../components/parts/pagination/pagination.css";
+@import "../components/blog/list/list.css";
+@import "../components/blog/filter/filter.css";
+
+.blog__base {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color5);
+}

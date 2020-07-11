@@ -2,7 +2,6 @@
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
-@import "../components/biography/head/head.css";
 @import "../components/biography/article/article.css";
 
 .biography__base {

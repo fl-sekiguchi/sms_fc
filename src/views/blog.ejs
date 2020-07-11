@@ -1,0 +1,28 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'blog.css',
+    script: 'index.js',
+    image: '/images',
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main blog" role="main">
+  <div class="wrapper">
+    <div class="base blog__base">
+      <div class="inner">
+        <%- include('../components/blog/head/head.ejs', { conf }) %>
+        <%- include('../components/blog/list/list.ejs', { conf }) %>
+        <%- include('../components/parts/pagination/pagination.ejs', { conf }) %>
+        <%- include('../components/blog/filter/filter.ejs', { conf }) %>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

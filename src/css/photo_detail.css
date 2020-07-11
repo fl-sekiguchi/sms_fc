@@ -2,7 +2,6 @@
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
-@import "../components/photo_detail/head/head.css";
 @import "../components/photo_detail/article/article.css";
 
 .photo__base {

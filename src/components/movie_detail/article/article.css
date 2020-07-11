@@ -1,7 +1,8 @@
 .article {
   max-width: 940px;
   width: calc(940 / 1140 * 100%);
-  margin: 90px auto 0;
+  margin-left: auto;
+  margin-right: auto;
   .article__cover {
     position: relative;
 

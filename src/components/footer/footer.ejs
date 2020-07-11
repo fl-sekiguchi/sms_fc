@@ -4,11 +4,41 @@
       <div class="pagetop__icon"><%- include('../include/icon/pagetop.ejs', { }) %></div>
       <p class="pagetop__text">PAGE TOP</p>
     </button>
-    <button class="sitesppport">SITE SUPPORT</button>
+    <div class="sitesupport">
+      <button class="sitesupport-toggle">SITE SUPPORT<span></span></button>
+      <ul class="sitesupport__items">
+        <%
+          const links = [
+            { text: "MYPAGE", link: "" },
+            { text: "会員登録", link: "" },
+            { text: "お問い合わせ", link: "" },
+            { text: "機種変更される方へ", link: "" },
+            { text: "ご利用規約", link: "" },
+            { text: "推奨環境", link: "" },
+            { text: "個人情報について", link: "" },
+            { text: "特定商取引法に基づく表記", link: "" },
+            { text: "ログアウト", link: "" },
+            { text: "会員退会", link: "" },
+          ]
+        %>
+        <% links.forEach(function (value, key) { _%>
+        <li class="sitesupport__items-item"><a href="<%- value.link %>"><%- value.text %></a></li>
+        <% }); _%>
+      </ul>
+    </div>
     <div class="social">
       <ul class="social__items">
-        <li class="social__items-item"><a href=""><%- include('../icon/twitter.ejs', { }) %></a></li>
-        <li class="social__items-item"><a href=""><%- include('../icon/twitter.ejs', { }) %></a></li>
+        <%
+          const socials = [
+            { include: "twitter" },
+            { include: "facebook" },
+            { include: "apple" },
+            { include: "spotify" },
+          ]
+        %>
+        <% socials.forEach(function (value, key) { _%>
+        <li class="social__items-item"><a href=""><%- include('../include/icon/'+value.include+'.ejs', { }) %></a></li>
+        <% }); _%>
       </ul>
     </div>
     <div class="footer-logo"><img src="<%- conf.image %>/common/logo_foot.png" alt=""></div>

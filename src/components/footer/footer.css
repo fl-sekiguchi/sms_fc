@@ -30,11 +30,14 @@
   top: 0;
   left: 0;
   background: none;
+  letter-spacing: .1em;
   border: none;
   display: flex;
   align-items: center;
   transform: rotate(90deg) translateY(-100%);
   transform-origin: left top;
+  outline: none;
+  cursor: pointer;
 
   .pagetop__icon {
     width: 50px;
@@ -56,29 +59,81 @@
   }
 }
 
-.sitesppport {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color1);
-  border: none;
-  color: #fff;
+.sitesupport {
   margin: 0 auto;
-  font-family: var(--fontMontserrat);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-
+  background-color: var(--color1);
   @media (--not-sp) {
-    width: 556px;
-    height: 125px;
-    font-size: 36px;
+    width: 680px;
   }
+  .sitesupport-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    font-family: var(--fontMontserrat);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    width: 100%;
+    background: none;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      right: 20px;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      &::before,
+      &::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+      }
+      &::before {
+        top: 12px;
+        right: 0;
+        width: 25px;
+        height: 2px;
+      }
+      &::after {
+        right: 12px;
+        top: 0;
+        width: 2px;
+        height: 25px;
+      }
+    }
 
-  @media (--sp) {
-    height: 62px;
-    width: calc(100% + 20px);
-    margin-left: -10px;
-    font-size: 18px;
+    @media (--not-sp) {
+      height: 125px;
+      font-size: 36px;
+    }
+
+    @media (--sp) {
+      height: 62px;
+      width: calc(100% + 20px);
+      margin-left: -10px;
+      font-size: 18px;
+    }
+  }
+  .sitesupport__items {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    .sitesupport__items-item {
+      text-align: left;
+      margin-bottom: 35px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -104,6 +159,10 @@
         background-color: var(--color1);
         border-radius: 50%;
         overflow: hidden;
+        svg {
+          fill: var(--color5);
+          width: calc(70%);
+        }
       }
     }
   }

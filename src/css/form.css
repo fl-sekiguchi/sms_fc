@@ -1,7 +1,6 @@
 @import "./common/_global.css";
 @import "../components/parts/button.css";
 @import "../components/parts/pagination/pagination.css";
-@import "../components/form/head/head.css";
 @import "../components/form/input/input.css";
 @import "../components/form/operation.css";
 
@@ -51,7 +50,7 @@
   }
 }
 
-.form_complete {
+.-formFinish {
   .form__head-text {
     margin-top: 70px;
     font-weight: 500;
