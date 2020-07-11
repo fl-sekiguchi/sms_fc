@@ -1,0 +1,66 @@
+@import "./common/_global.css";
+@import "../components/parts/button.css";
+@import "../components/parts/pagination/pagination.css";
+@import "../components/form/head/head.css";
+@import "../components/form/input/input.css";
+@import "../components/form/operation.css";
+
+.form__base {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color5);
+}
+
+.form {
+  margin-top: 70px;
+  background-color: #fff;
+  padding: 70px 190px;
+}
+
+.form__head-title {
+  font-size: 28px;
+  font-family: var(--fontNotoSansJP);
+  font-weight: 600;
+  color: var(--color4);
+  line-height: 1.4;
+}
+
+.form__head-text {
+  font-size: 24px;
+  font-family: var(--fontNotoSansJP);
+  color: var(--color4);
+  line-height: 1.4;
+  margin-top: 25px;
+}
+
+.form__item {
+  margin-top: 40px;
+  .form__item-title {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--fontNotoSansJP);
+    color: var(--color6);
+    margin-bottom: 20px;
+  }
+  .form__item-value {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--fontNotoSansJP);
+    color: var(--color6);
+  }
+}
+
+.form_complete {
+  .form__head-text {
+    margin-top: 70px;
+    font-weight: 500;
+    color: var(--color6);
+  }
+  .operation {
+    margin-top: 90px;
+  }
+  .button--top {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,23 @@
+          <div class="list">
+            <div class="items">
+              <%
+                const list = [
+                  { day: "02", week: "TUE", tag: "MEDIA", time: "22:00-23:00", text: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト" },
+                  { day: "02", week: "TUE", tag: "MEDIA", time: "22:00-23:00", text: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト" },
+                  { day: "02", week: "TUE", tag: "MEDIA", time: "22:00-23:00", text: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト" },
+                ]
+              %>
+              <% list.forEach(function (value, key) { _%>
+              <div class="item">
+                <div class="item-date"><strong><%- value.day %></strong><%- value.week %></div>
+                <div class="item__body">
+                  <div class="item__head">
+                    <p class="item__head-tag"><%- value.tag %></p>
+                    <p class="item__head-date"><%- value.time %></p>
+                  </div>
+                  <p class="item__text"><%- value.text %></p>
+                </div>
+              </div>
+              <% }); _%>
+            </div>
+          </div>

@@ -1,0 +1,65 @@
+.card {
+  .card__body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    position: relative;
+    .card__item {
+      width: 50%;
+      .card__item-title {
+        font-size: 20px;
+        font-family: var(--fontMontserrat);
+        letter-spacing: 0.1em;
+      }
+      .card__item-value {
+        font-family: var(--fontMontserrat);
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        margin-top: 15px;
+      }
+      &.card__item--name {
+        padding: 50px 0 50px 40px;
+        .card__item-title {
+          color: var(--color6);
+        }
+        .card__item-value {
+          color: var(--color6);
+          font-size: 36px;
+        }
+      }
+      &.card__item--number {
+        .card__item-inner {
+          background-color: var(--color5);
+          padding: 20px 30px 20px 30px;
+        }
+        .card__item-title {
+          color: var(--color4);
+        }
+        .card__item-value {
+          color: var(--color4);
+          font-size: 36px;
+        }
+      }
+      &.card__item--date {
+        padding: 0 40px 60px 40px;
+        .card__item-title {
+          color: var(--color4);
+        }
+        .card__item-value {
+          color: var(--color4);
+          font-size: 32px;
+        }
+      }
+      &.card__item--birthday {
+        padding: 0 40px 60px 40px;
+        .card__item-title {
+          color: var(--color4);
+        }
+        .card__item-value {
+          color: var(--color4);
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'mypage.css',
+    script: 'index.js',
+    image: '/images',
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main" role="main">
+  <div class="wrapper">
+    <div class="base mypage__base">
+      <div class="inner">
+        <%- include('../components/mypage/head/head.ejs', { conf }) %>
+        <div class="row mypage-detail">
+          <div class="col8">
+            <%- include('../components/mypage/card/card.ejs', { conf }) %>
+            <%- include('../components/mypage/favorite/favorite.ejs', { conf }) %>
+            <%- include('../components/mypage/chackin/chackin.ejs', { conf }) %>
+          </div>
+          <div class="col4">
+            <%- include('../components/mypage/member/member.ejs', { conf }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

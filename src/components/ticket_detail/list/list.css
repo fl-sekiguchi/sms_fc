@@ -1,0 +1,36 @@
+      .news__list {
+        margin-top: 80px;
+
+        .news-item {
+          margin-bottom: 40px;
+        }
+
+        .news-inner {
+          background-color: #fff;
+          border-radius: 5px;
+          overflow: hidden;
+          .news__head {
+            display: flex;
+            align-items: center;
+            .news__tags {
+              display: flex;
+              .news__tags-item {
+                font-size: 12px;
+                font-family: var(--fontMontserrat);
+                color: var(--color6);
+                margin-left: 10px;
+                border: 1px solid var(--color6);
+                border-radius: 10px;
+                padding: 2px 10px;
+              }
+            }
+          }
+          .news-text {
+            padding: 20px;
+            color: var(--color4);
+            font-family: var(--fontNotoSansJP);
+            font-size: 18px;
+            line-height: 1.6;
+          }
+        }
+      }

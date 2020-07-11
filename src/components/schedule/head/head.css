@@ -1,0 +1,33 @@
+.head {
+  position: relative;
+  .head-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--fontMontserrat);
+    color: var(--color4);
+    letter-spacing: .1em;
+  }
+  .head__operation {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: var(--color4);
+      font-family: var(--fontNotoSansJP);
+      font-size: 40px;
+    }
+
+    .head__operation-date {
+      font-size: 40px;
+      font-family: var(--fontMontserrat);
+      font-weight: 600;
+      color: var(--color4);
+    }
+  }
+}

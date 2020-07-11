@@ -1,0 +1,13 @@
+@import "./common/_global.css";
+@import "../components/parts/button.css";
+@import "../components/parts/date.css";
+@import "../components/parts/pagination/pagination.css";
+@import "../components/ticket/head/head.css";
+@import "../components/ticket/list/list.css";
+@import "../components/ticket/filter/filter.css";
+
+.ticket__base {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color5);
+}

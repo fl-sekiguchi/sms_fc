@@ -1,0 +1,58 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'form.css',
+    script: 'index.js',
+    image: '/images',
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main form_confirm" role="main">
+  <div class="wrapper">
+    <div class="base form__base">
+      <div class="inner">
+        <%- include('../components/form/head/head.ejs', { conf }) %>
+        <div class="form">
+          <div class="form__head">
+            <h2 class="form__head-title">記入内容の確認</h2>
+          </div>
+          <form>
+            <dl class="form__item">
+              <dt class="form__item-title">名前：</dt>
+              <dd class="form__item-value">テキストテキスト</dd>
+            </dl>
+            <dl class="form__item">
+              <dt class="form__item-title">性別：</dt>
+              <dd class="form__item-value">テキストテキスト</dd>
+            </dl>
+            <dl class="form__item">
+              <dt class="form__item-title">年齢：</dt>
+              <dd class="form__item-value">テキストテキスト</dd>
+            </dl>
+            <dl class="form__item">
+              <dt class="form__item-title">お問い合わせ</dt>
+              <dd class="form__item-value">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+            </dl>
+            <dl class="form__item">
+              <dt class="form__item-title">チェックボックス</dt>
+              <dd class="form__item-value">テキストテキスト</dd>
+            </dl>
+            <dl class="form__item">
+              <dt class="form__item-title">ラジオボタン</dt>
+              <dd class="form__item-value">テキストテキスト</dd>
+              <dd class="form__item-value">テキストテキスト</dd>
+            </dl>
+            <%- include('../components/form/confirm/operation.ejs', { conf }) %>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

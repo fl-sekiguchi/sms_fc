@@ -1,0 +1,19 @@
+@import "./common/_global.css";
+@import "../components/parts/button.css";
+@import "../components/parts/date.css";
+@import "../components/parts/pagination/pagination.css";
+@import "../components/ticket_detail/head/head.css";
+@import "../components/ticket_detail/article/article.css";
+@import "../components/ticket_detail/posts/posts.css";
+@import "../components/parts/filter/category.css";
+@import "../components/parts/filter/month.css";
+
+.ticket__base {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color5);
+}
+
+.news-detail {
+  margin-top: 80px;
+}

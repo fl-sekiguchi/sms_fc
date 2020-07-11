@@ -1,0 +1,21 @@
+.member {
+  background-color: var(--color1);
+  padding: 45px 20px 100px;
+  color: #fff;
+  .member-title {
+    font-size: 24px;
+  }
+  .member__items {
+    margin-top: 20px;
+    .member__items-item {
+      border-bottom: 1px solid #fff;
+      a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+      }
+    }
+  }
+}

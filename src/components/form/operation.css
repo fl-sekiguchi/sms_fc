@@ -1,0 +1,12 @@
+.operation {
+  margin-top: 60px;
+  display: flex;
+  .button {
+    width: 228px;
+    margin-right: 40px;
+    &.button--back {
+      color: var(--color4);
+      background-color: var(--color5);
+    }
+  }
+}
