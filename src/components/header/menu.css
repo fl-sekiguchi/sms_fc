@@ -7,7 +7,9 @@
     height: 90px;
     background-color: var(--color2);
     border: none;
-    z-index: 20;
+    z-index: 30;
+    cursor: pointer;
+    outline: none;
 
     @media (--sp) {
       width: 45px;
@@ -65,14 +67,12 @@
     width: 100%;
     height: 100vh;
     background-color: var(--color1);
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &:not(.-show) {
-      visibility: hidden;
-      opacity: 0;
-    }
+    transition-duration: 0.5s;
+    transition-property: visibility, opacity;
 
     .container {
       width: calc(1140 / 1440 * 100%);
@@ -124,4 +124,30 @@
       }
     }
   }
+
+  &.-show {
+    .menu__toggle {
+      span {
+        &:nth-of-type(1) {
+          transform: translateY(20px) rotate(-225deg);
+        }
+
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+
+        &:nth-of-type(3) {
+          transform: translateY(-20px) rotate(225deg);
+        }
+      }
+    }
+  }
+
+  &:not(.-show) {
+    .menu__wrapper {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
 }

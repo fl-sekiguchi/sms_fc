@@ -4,7 +4,7 @@
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
 @import "../components/parts/head.css";
-@import "../components/menu/menu.css";
+@import "../components/header/menu.css";
 
 .-hidden-pc {
     @media (--not-sp) {

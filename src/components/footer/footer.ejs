@@ -6,25 +6,27 @@
     </button>
     <div class="sitesupport">
       <button class="sitesupport-toggle">SITE SUPPORT<span></span></button>
-      <ul class="sitesupport__items">
-        <%
-          const links = [
-            { text: "MYPAGE", link: "" },
-            { text: "会員登録", link: "" },
-            { text: "お問い合わせ", link: "" },
-            { text: "機種変更される方へ", link: "" },
-            { text: "ご利用規約", link: "" },
-            { text: "推奨環境", link: "" },
-            { text: "個人情報について", link: "" },
-            { text: "特定商取引法に基づく表記", link: "" },
-            { text: "ログアウト", link: "" },
-            { text: "会員退会", link: "" },
-          ]
-        %>
-        <% links.forEach(function (value, key) { _%>
-        <li class="sitesupport__items-item"><a href="<%- value.link %>"><%- value.text %></a></li>
-        <% }); _%>
-      </ul>
+      <div class="sitesupport-list">
+        <ul class="sitesupport__items">
+          <%
+            const links = [
+              { text: "MYPAGE", link: "" },
+              { text: "会員登録", link: "" },
+              { text: "お問い合わせ", link: "" },
+              { text: "機種変更される方へ", link: "" },
+              { text: "ご利用規約", link: "" },
+              { text: "推奨環境", link: "" },
+              { text: "個人情報について", link: "" },
+              { text: "特定商取引法に基づく表記", link: "" },
+              { text: "ログアウト", link: "" },
+              { text: "会員退会", link: "" },
+            ]
+          %>
+          <% links.forEach(function (value, key) { _%>
+          <li class="sitesupport__items-item"><a href="<%- value.link %>"><%- value.text %></a></li>
+          <% }); _%>
+        </ul>
+      </div>
     </div>
     <div class="social">
       <ul class="social__items">

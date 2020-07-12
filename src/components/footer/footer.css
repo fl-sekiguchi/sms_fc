@@ -91,11 +91,11 @@
       margin: auto;
       &::before,
       &::after {
-        content: "";
         background-color: #fff;
         position: absolute;
       }
       &::before {
+        content: "";
         top: 12px;
         right: 0;
         width: 25px;
@@ -121,6 +121,9 @@
       font-size: 18px;
     }
   }
+  .sitesupport-list {
+    display: none;
+  }
   .sitesupport__items {
     padding-left: 70px;
     padding-right: 70px;
@@ -132,6 +135,16 @@
         color: #fff;
         text-decoration: none;
         font-size: 18px;
+      }
+    }
+  }
+
+  &:not(.-open) {
+    .sitesupport-toggle {
+      span {
+        &::after {
+          content: "";
+        }
       }
     }
   }

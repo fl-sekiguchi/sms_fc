@@ -93,7 +93,8 @@ exports.script = {
   src: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/_*', '!src/components/**/*', '!src/assets/**/*'],
   watch: ['src/**/*.{js,jsx,ts,tsx}', 'src/components/**/*.{js,jsx,ts,tsx}'],
   entry: {
-    'js/index': './src/js/index.js',
+    'js/common': './src/js/common.js',
+    'js/top': './src/js/top.js',
   },
 };
 
