@@ -206,14 +206,17 @@
         background-color: var(--color1);
         border-radius: 50%;
         overflow: hidden;
+        text-decoration: none;
 
         @media (--sp) {
           width: 25px;
           height: 25px;
         }
-        svg {
-          fill: var(--color5);
-          width: calc(70%);
+        i {
+          color: #fff;
+          &::before {
+            font-size: 30px;
+          }
         }
       }
     }

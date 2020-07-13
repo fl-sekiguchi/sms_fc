@@ -32,14 +32,14 @@
       <ul class="social__items">
         <%
           const socials = [
-            { include: "twitter" },
-            { include: "facebook" },
-            { include: "apple" },
-            { include: "spotify" },
+            { name: "twitter", fontawesome: "fab fa-twitter" },
+            { name: "facebook", fontawesome: "fab fa-facebook" },
+            { name: "apple", fontawesome: "fab fa-apple" },
+            { name: "spotify", fontawesome: "fab fa-spotify" },
           ]
         %>
         <% socials.forEach(function (value, key) { _%>
-        <li class="social__items-item"><a href=""><%- include('../include/icon/'+value.include+'.ejs', { }) %></a></li>
+        <li class="social__items-item"><a href=""><i class="<%- value.fontawesome %>"></i></a></li>
         <% }); _%>
       </ul>
     </div>

@@ -8,7 +8,7 @@
 @import "../components/top/movie/movie.css";
 @import "../components/top/news/news.css";
 @import "../components/top/link/link.css";
-@import "../components/top/fixedCard/fixedCard.css";
+@import "../components/top/alert/alert.css";
 
 .footer {
   @media (--sp) {

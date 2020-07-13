@@ -51,11 +51,11 @@
           }
 
           .link-icon {
-            margin-left: auto;
-            margin-right: auto;
-            width: calc(83 / 204 * 100%);
-            svg {
-              fill: var(--color1);
+            i {
+              color: var(--color1);
+              &::before {
+                font-size: 50px;
+              }
             }
           }
 

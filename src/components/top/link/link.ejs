@@ -4,20 +4,20 @@
         <ul class="link__items">
           <%
             const links = [
-              { include: "news", text: "NEWS", href: "" },
-              { include: "movie", text: "MOVIE", href: "" },
-              { include: "photo", text: "PHOTO", href: "" },
-              { include: "tickets", text: "TICKETS", href: "" },
-              { include: "blog", text: "BLOG", href: "" },
-              { include: "live", text: "LIVE", href: "" },
-              { include: "radio", text: "RADIO", href: "" },
-              { include: "schedule", text: "SCHEDULE", href: "" },
-              { include: "special", text: "SPECIAL", href: "" },
+              { name: "news", fontawesome: "far fa-newspaper", text: "NEWS", href: "" },
+              { name: "movie", fontawesome: "fas fa-film", text: "MOVIE", href: "" },
+              { name: "photo", fontawesome: "fas fa-camera", text: "PHOTO", href: "" },
+              { name: "tickets", fontawesome: "fas fa-ticket-alt", text: "TICKETS", href: "" },
+              { name: "blog", fontawesome: "far fa-edit", text: "BLOG", href: "" },
+              { name: "live", fontawesome: "fas fa-music", text: "LIVE", href: "" },
+              { name: "radio", fontawesome: "fas fa-headphones-alt", text: "RADIO", href: "" },
+              { name: "schedule", fontawesome: "far fa-calendar-alt", text: "SCHEDULE", href: "" },
+              { name: "special", fontawesome: "far fa-star", text: "SPECIAL", href: "" },
             ]
           %>
           <% links.forEach(function (value, key) { _%>
           <li class="link__items-item"><a href="">
-            <div class="link-icon link-icon--<%- value.include %>"><%- include('../../include/icon/'+value.include+'.ejs', { conf }) %></div>
+            <div class="link-icon link-icon--<%- value.name %>"><i class="<%- value.fontawesome %>"></i></div>
             <p class="link-text"><%- value.text %></p>
           </a></li>
           <% }); _%>
