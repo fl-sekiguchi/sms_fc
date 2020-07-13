@@ -3,6 +3,7 @@
 @import "../components/lib/slick/slick-theme.css";
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
+@import "../components/top/mv/mv.css";
 @import "../components/top/login/login.css";
 @import "../components/top/banner/banner.css";
 @import "../components/top/movie/movie.css";

@@ -9,7 +9,7 @@
 
   @media (--not-sp) {
     bottom: 100px;
-    width: calc(494 / 1440 * 100%);
+    width: 494px;
     padding: 20px 40px 20px 0;
   }
 

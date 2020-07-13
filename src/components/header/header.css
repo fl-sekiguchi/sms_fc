@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   @media (--not-sp) {
     padding-top: 30px;
     padding-bottom: 60px;

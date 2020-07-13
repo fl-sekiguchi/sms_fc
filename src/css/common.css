@@ -50,6 +50,14 @@ img {
     max-width: 1280px;
   }
 
+  @media (--tb-h) {
+    width: calc(90%);
+  }
+
+  @media (--tb) {
+    width: calc(90%);
+  }
+
   &.base--main {
     background-color: var(--color5);
 
