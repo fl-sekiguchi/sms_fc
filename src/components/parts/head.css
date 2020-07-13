@@ -8,22 +8,44 @@
     font-family: var(--fontMontserrat);
     color: var(--color4);
     letter-spacing: .1em;
+
+    @media (--sp) {
+      font-size: 24px;
+    }
   }
   .head-filter {
-    font-size: 24px;
     font-family: var(--fontMontserrat);
     color: var(--color4);
-    position: absolute;
-    right: 0;
-    top: 10px;
+    letter-spacing: .1em;
+
+    @media (--not-sp) {
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+
+    @media (--sp) {
+      font-size: 12px;
+      text-align: right;
+      margin-top: 30px;
+    }
   }
   .head-back {
     font-size: 24px;
     font-family: var(--fontMontserrat);
     color: var(--color4);
-    position: absolute;
-    left: 0;
-    top: 10px;
     text-decoration: none;
+    @media (--not-sp) {
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    @media (--sp) {
+      font-size: 12px;
+      margin-top: 30px;
+      display: block;
+    }
   }
 }

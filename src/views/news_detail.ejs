@@ -19,6 +19,7 @@ const conf = {
         <div class="row news-detail">
           <div class="col8">
             <%- include('../components/news_detail/article/article.ejs', { conf }) %>
+            <%- include('../components/news_detail/operation/operation.ejs', { conf, device: "pc" }) %>
           </div>
           <div class="col4">
             <%- include('../components/news_detail/posts/posts.ejs', { conf }) %>
@@ -26,6 +27,7 @@ const conf = {
             <%- include('../components/parts/filter/month.ejs', { conf, place: "sidebar" }) %>
           </div>
         </div>
+        <%- include('../components/news_detail/operation/operation.ejs', { conf, device: "sp" }) %>
       </div>
     </div>
   </div>

@@ -1,15 +1,11 @@
 @import "libraries-frontend-framelunch/css/_variables.css";
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
   @media (--not-sp) {
+    display: flex;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-  }
-
-  @media (--sp) {
-    flex-direction: column;
   }
 }
 
@@ -19,6 +15,10 @@
   @media (--not-sp) {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  @media (--sp) {
+    margin-bottom: 1.5rem;
   }
 }
 

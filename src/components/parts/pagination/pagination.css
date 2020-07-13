@@ -2,6 +2,10 @@
   padding-bottom: 80px;
   padding-top: 10px;
   text-align: center;
+
+  @media (--sp) {
+    padding-bottom: 40px;
+  }
   .pagenation__buttons {
     position: relative;
     display: inline-flex;
@@ -12,23 +16,38 @@
   .pagination-backtop {
     width: 160px;
     margin: 0 auto;
+    @media (--sp) {
+      width: 120px;
+    }
   }
 
   .pagination-prev,
   .pagination-next {
     border: none;
     background: none;
-    font-family: var(--fontNotoSansJP);
+    font-family: var(--fontMontserrat);
     font-size: 18px;
     color: var(--color4);
     letter-spacing: .05em;
+
+    @media (--sp) {
+      font-size: 15px;
+    }
   }
 
   .pagination-prev {
     margin-right: 20px;
+
+    @media (--sp) {
+      margin-right: 10px;
+    }
   }
 
   .pagination-next {
     margin-left: 20px;
+
+    @media (--sp) {
+      margin-left: 10px;
+    }
   }
 }

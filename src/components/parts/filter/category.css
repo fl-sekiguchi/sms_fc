@@ -1,13 +1,26 @@
 .category {
   background-color: #fff;
+
+  @media (--sp) {
+    padding: 25px 15px;
+  }
+
   .category-title {
     color: var(--color4);
     font-family: var(--fontMontserrat);
     letter-spacing: 0.05em;
+
+    @media (--sp) {
+      font-size: 18px;
+    }
   }
 
   .categor-list {
     overflow: hidden;
+
+    @media (--sp) {
+      margin-top: 15px;
+    }
   }
 
   .category__items {
@@ -16,9 +29,19 @@
     margin-left: -10px;
     margin-top: -20px;
 
+    @media (--sp) {
+      margin-left: -6px;
+      margin-top: -10px;
+    }
+
     .category__items-list {
       margin-top: 20px;
       padding-left: 10px;
+
+      @media (--sp) {
+        margin-top: 10px;
+        padding-left: 6px;
+      }
       a {
         color: var(--color6);
         font-family: var(--fontNotoSansJP);
@@ -29,42 +52,64 @@
         align-items: center;
         justify-content: center;
         text-decoration: none;
+
+        @media (--sp) {
+          font-size: 10px;
+        }
       }
     }
   }
 
   &.category--foot {
-    padding: 50px 20px;
+    @media (--not-sp) {
+      padding: 50px 20px;
+    }
 
     .category-title {
-      font-size: 28px;
+      @media (--not-sp) {
+        font-size: 28px;
+      }
     }
 
     .categor-list {
-      margin-top: 30px;
+      @media (--not-sp) {
+        margin-top: 30px;
+      }
 
       .category__items-list {
         a {
-          font-size: 20px;
+          @media (--not-sp) {
+            font-size: 20px;
+          }
         }
       }
     }
   }
 
   &.category--sidebar {
-    margin-top: 40px;
-    padding: 0 15px 50px;
+    @media (--not-sp) {
+      margin-top: 40px;
+      padding: 0 15px 50px;
+    }
+
+    @media (--sp) {
+      margin-bottom: 1.5rem;
+    }
 
     .category-title {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      font-size: 24px;
+      @media (--not-sp) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 24px;
+      }
     }
 
     .categor-list {
       .category__items-list {
         a {
-          font-size: 20px;
+          @media (--not-sp) {
+            font-size: 20px;
+          }
         }
       }
     }

@@ -1,6 +1,12 @@
 .posts {
   background-color: #fff;
   padding: 0 15px 30px;
+
+  @media (--sp) {
+    margin-top: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 1.5rem;
+  }
   .posts-title {
     font-size: 24px;
     font-family: var(--fontMontserrat);
@@ -8,6 +14,11 @@
     padding-top: 30px;
     padding-bottom: 30px;
     letter-spacing: 0.05em;
+
+    @media (--sp) {
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
   }
   .posts-list {
     overflow: hidden;
