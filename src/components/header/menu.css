@@ -75,46 +75,78 @@
     transition-property: visibility, opacity;
 
     .container {
-      width: calc(1140 / 1440 * 100%);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @media (--not-sp) {
+        width: calc(1140 / 1440 * 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
       .menu-list {
-        flex: 1;
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin-top: -40px;
+        @media (--not-sp) {
+          flex: 1;
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          margin-top: -40px;
+        }
+        @media (--sp) {
+          text-align: center;
+          margin-top: -20px;
+          padding-bottom: 30px;
+        }
         .menu-list__block {
-          padding-right: 60px;
+          @media (--not-sp) {
+            padding-right: 60px;
+          }
           .menu-list__block-item {
             margin-top: 40px;
+            @media (--sp) {
+              margin-top: 20px;
+            }
             a {
               font-size: 32px;
               color: #fff;
               font-family: var(--fontMontserrat);
               text-decoration: none;
+
+              @media (--sp) {
+                font-size: 18px;
+              }
             }
           }
         }
       }
 
       .menu-buttons {
-        width: calc(365 / 1140 * 100%);
-        padding: 40px 20px 30px;
         background-color: var(--color3);
+        @media (--not-sp) {
+          width: calc(365 / 1140 * 100%);
+          padding: 40px 20px 30px;
+        }
+
+        @media (--sp) {
+          padding: 25px 60px;
+        }
 
         .menu-buttons__head {
           display: flex;
           justify-content: space-between;
           a {
             width: calc(50% - 15px);
+
+            @media (--sp) {
+              width: calc(50% - 5px);
+            }
           }
         }
 
         .menu-buttons__banner {
           margin-top: 30px;
+
+          @media (--sp) {
+            margin-top: 25px;
+          }
           a {
             img {
               width: 100%;
@@ -130,6 +162,10 @@
       span {
         &:nth-of-type(1) {
           transform: translateY(20px) rotate(-225deg);
+
+          @media (--sp) {
+            transform: translateY(10px) rotate(-225deg);
+          }
         }
 
         &:nth-of-type(2) {
@@ -138,6 +174,10 @@
 
         &:nth-of-type(3) {
           transform: translateY(-20px) rotate(225deg);
+
+          @media (--sp) {
+            transform: translateY(-10px) rotate(225deg);
+          }
         }
       }
     }

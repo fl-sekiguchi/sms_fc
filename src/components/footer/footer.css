@@ -27,8 +27,6 @@
 
 .pagetop {
   position: absolute;
-  top: 0;
-  left: 0;
   background: none;
   letter-spacing: .1em;
   border: none;
@@ -39,9 +37,23 @@
   outline: none;
   cursor: pointer;
 
+  @media (--not-sp) {
+    top: 0;
+    left: 0;
+  }
+
+  @media (--sp) {
+    bottom: 180px;
+    left: 10px;
+  }
+
   .pagetop__icon {
     width: 50px;
     transform: scale(-1, -1);
+
+    @media (--sp) {
+      width: 25px;
+    }
 
     svg {
       path {
@@ -56,6 +68,10 @@
     font-weight: 600;
     font-family: var(--fontMontserrat);
     color: var(--color1);
+
+    @media (--sp) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -75,11 +91,22 @@
     font-family: var(--fontMontserrat);
     font-weight: 600;
     letter-spacing: 0.05em;
-    width: 100%;
     background: none;
     position: relative;
     outline: none;
     cursor: pointer;
+    width: 100%;
+
+    @media (--not-sp) {
+      height: 125px;
+      font-size: 36px;
+    }
+
+    @media (--sp) {
+      height: 62px;
+      font-size: 18px;
+    }
+
     span {
       display: block;
       position: absolute;
@@ -108,18 +135,6 @@
         height: 25px;
       }
     }
-
-    @media (--not-sp) {
-      height: 125px;
-      font-size: 36px;
-    }
-
-    @media (--sp) {
-      height: 62px;
-      width: calc(100% + 20px);
-      margin-left: -10px;
-      font-size: 18px;
-    }
   }
   .sitesupport-list {
     display: none;
@@ -128,13 +143,26 @@
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 50px;
+    @media (--sp) {
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 25px;
+    }
     .sitesupport__items-item {
       text-align: left;
       margin-bottom: 35px;
+
+      @media (--sp) {
+        margin-bottom: 20px;
+      }
       a {
         color: #fff;
         text-decoration: none;
         font-size: 18px;
+
+        @media (--sp) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -161,8 +189,14 @@
     display: flex;
     justify-content: center;
     margin-left: -20px;
+    @media (--sp) {
+      margin-left: -10px;
+    }
     .social__items-item {
       padding-left: 20px;
+      @media (--sp) {
+        padding-left: 10px;
+      }
       a {
         width: 51px;
         height: 51px;
@@ -172,6 +206,11 @@
         background-color: var(--color1);
         border-radius: 50%;
         overflow: hidden;
+
+        @media (--sp) {
+          width: 25px;
+          height: 25px;
+        }
         svg {
           fill: var(--color5);
           width: calc(70%);

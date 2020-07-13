@@ -9,3 +9,9 @@
 @import "../components/top/news/news.css";
 @import "../components/top/link/link.css";
 @import "../components/top/fixedCard/fixedCard.css";
+
+.footer {
+  @media (--sp) {
+    padding-bottom: 120px;
+  }
+}

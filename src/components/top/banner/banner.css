@@ -1,8 +1,17 @@
 .banner {
+  .inner {
+    @media (--sp) {
+      width: auto;
+    }
+  }
   .banner__base {
     background-color: var(--color5);
     padding-top: 60px;
     padding-bottom: 60px;
+    @media (--sp) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
     .banner__items {
       display: flex;
       margin-bottom: 0;
@@ -11,6 +20,11 @@
         width: calc(100% / 3);
         padding-left: 15px;
         padding-right: 15px;
+
+        @media (--sp) {
+          padding-left: 7px;
+          padding-right: 7px;
+        }
       }
     }
   }
@@ -18,6 +32,10 @@
     width: 54px;
     height: 54px;
     z-index: 1;
+    @media (--sp) {
+      width: 30px;
+      height: 30px;
+    }
     &::before {
       background-image: url("../../../images/temp/banner_arrow.png");
       background-repeat: no-repeat;
@@ -27,13 +45,28 @@
       background-size: 100% auto;
     }
     &.slick-prev {
-      left: -90px;
       &::before {
         transform: scale(-1, 1);
       }
+      @media (--not-sp) {
+        left: -90px;
+      }
+      @media (--sp) {
+        left: 0;
+      }
     }
     &.slick-next {
-      right: -90px;
+      @media (--not-sp) {
+        right: -90px;
+      }
+      @media (--sp) {
+        right: 0;
+      }
+    }
+  }
+  .slick-dots {
+    @media (--sp) {
+      bottom: -15px;
     }
   }
   .slick-dots li {
@@ -41,6 +74,11 @@
     height: 10px;
     border-radius: 50%;
     overflow: hidden;
+
+    @media (--sp) {
+      width: 5px;
+      height: 5px;
+    }
     button {
       width: 100%;
       height: 100%;

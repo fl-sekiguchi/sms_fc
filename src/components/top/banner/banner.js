@@ -11,5 +11,15 @@ notice.listen('init', () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          centerPadding: '70px',
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });

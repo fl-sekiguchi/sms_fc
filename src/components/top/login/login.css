@@ -1,19 +1,35 @@
 .login {
   padding-top: 40px;
-  padding-bottom: 40px;
+  @media (--not-sp) {
+    padding-bottom: 40px;
+  }
 
   .login__buttons {
     display: flex;
     justify-content: center;
-    width: 560px;
     margin: 0 auto;
     background-color: var(--color3);
     padding-top: 20px;
     padding-bottom: 20px;
+    @media (--not-sp) {
+      width: 560px;
+    }
+    @media (--sp) {
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     a {
-      width: 140px;
-      &:first-of-type {
-        margin-right: 16px;
+      @media (--not-sp) {
+        width: 140px;
+        font-size: 24px;
+        &:first-of-type {
+          margin-right: 16px;
+        }
+      }
+      @media (--sp) {
+        width: calc(50% - 10px);
+        font-size: 18px;
       }
     }
   }

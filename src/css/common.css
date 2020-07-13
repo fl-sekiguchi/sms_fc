@@ -38,7 +38,9 @@ img {
 }
 
 .wrapper {
-  padding-bottom: 150px;
+  @media (--not-sp) {
+    padding-bottom: 150px;
+  }
 }
 
 .base {

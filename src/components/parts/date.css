@@ -1,5 +1,4 @@
 .date {
-  height: 40px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -9,7 +8,16 @@
   text-decoration: none;
   border-bottom-right-radius: 5px;
   background-color: var(--color4);
-  font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media (--not-sp) {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  @media (--sp) {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
