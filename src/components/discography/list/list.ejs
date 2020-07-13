@@ -17,11 +17,7 @@
         <div class="card__body">
           <div class="card__body__head">
             <p class="date card__body-date"><%- value.date %></p>
-            <ul class="card__body-tags">
-              <% value.tags.forEach(function (value2, key2) { _%>
-              <li class="card__body-tag"><%- value2 %></li>
-              <% }); _%>
-            </ul>
+            <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
           </div>
           <p class="card-text"><%- value.text %></p>
         </div>

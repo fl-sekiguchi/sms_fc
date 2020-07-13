@@ -1,8 +1,10 @@
 .article {
-  max-width: 940px;
-  width: calc(940 / 1140 * 100%);
-  margin-left: auto;
-  margin-right: auto;
+  @media (--not-sp) {
+    max-width: 940px;
+    width: calc(940 / 1140 * 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
   .article__cover {
     position: relative;
 
@@ -16,9 +18,16 @@
   }
 
   .article__body {
-    width: calc(550 / 940 * 100%);
     margin: 0 auto;
-    max-width: 550px;
+    @media (--not-sp) {
+      width: calc(550 / 940 * 100%);
+      max-width: 550px;
+      padding-top: 40px;
+    }
+
+    @media (--sp) {
+      padding: 20px 15px;
+    }
 
     .article-title {
       font-size: 24px;
@@ -26,6 +35,10 @@
       color: var(--color4);
       font-weight: 600;
       line-height: 1.4;
+
+      @media (--sp) {
+        font-size: 14px;
+      }
     }
 
     .article-text {
@@ -34,6 +47,11 @@
       color: var(--color4);
       line-height: 1.6;
       margin-top: 30px;
+
+      @media (--sp) {
+        font-size: 12px;
+        margin-top: 15px;
+      }
     }
 
     .article-photos {
@@ -44,8 +62,14 @@
   }
 
   .article__foot {
-    margin-top: 100px;
     text-align: center;
+    @media (--not-sp) {
+      margin-top: 100px;
+    }
+
+    @media (--sp) {
+      margin-top: 35px;
+    }
 
       .article__foot-bt {
         display: inline-flex;

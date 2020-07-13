@@ -1,8 +1,23 @@
 .header {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  @media (--not-sp) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
   .header-logo {
     text-align: center;
+
+    @media (--sp) {
+      display: flex;
+      align-items: center;
+      height: 45px;
+      background-color: var(--color3);
+      padding-left: 15px;
+    }
+    .header-logo__image {
+      @media (--sp) {
+        width: calc(315px / 2);
+      }
+    }
   }
 
   .header-logo__subtitle {

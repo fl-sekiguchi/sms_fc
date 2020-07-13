@@ -13,13 +13,12 @@
                 <div class="news-inner">
                   <div class="news__head">
                     <p class="date news__head-date">2020.01.01</p>
-                    <ul class="news__tags">
-                      <li class="news__tags-item">NEWS</li>
-                      <li class="news__tags-item">MEDIA</li>
-                      <li class="news__tags-item">SAMPLE</li>
-                    </ul>
+                    <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
                   </div>
-                  <p class="news-text">テキストテテキストテキストテキストテキストキスト</p>
+                  <div class="item__body">
+                    <p class="item__body-text">テキストテテキストテキストテキストテキストキスト</p>
+                    <p class="item__body-subtext">テキストテテキストテキストテキストテキストキスト</p>
+                  </div>
                 </div>
               </div>
               <% }); _%>

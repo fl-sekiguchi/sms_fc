@@ -1,0 +1,13 @@
+.operation {
+  margin-top: 100px;
+  text-align: center;
+
+  @media (--sp) {
+    margin-top: 25px;
+  }
+  .button {
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

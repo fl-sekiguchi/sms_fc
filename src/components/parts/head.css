@@ -1,6 +1,11 @@
 .head {
   position: relative;
-  margin-bottom: 80px;
+  @media (--not-sp) {
+    margin-bottom: 80px;
+  }
+  @media (--sp) {
+    margin-bottom: 60px;
+  }
   .head-title {
     font-size: 48px;
     font-weight: 700;

@@ -1,14 +1,11 @@
 @import "./common/_global.css";
+@import "../components/lib/slick/slick.css";
+@import "../components/lib/slick/slick-theme.css";
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
+@import "../components/mypage/head/head.css";
 @import "../components/mypage/card/card.css";
 @import "../components/mypage/favorite/favorite.css";
 @import "../components/mypage/chackin/chackin.css";
 @import "../components/mypage/member/member.css";
-
-.mypage__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-}

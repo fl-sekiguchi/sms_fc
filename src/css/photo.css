@@ -1,11 +1,6 @@
 @import "./common/_global.css";
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
+@import "../components/parts/tag/tag.css";
 @import "../components/parts/pagination/pagination.css";
 @import "../components/photo/list/list.css";
-
-.photo__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-}

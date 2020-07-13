@@ -2,6 +2,12 @@
   margin-top: 50px;
   background-color: #fff;
   padding: 60px;
+
+  @media (--sp) {
+    margin-top: 25px;
+    padding: 30px 10px;
+  }
+
   .chackin-title {
     font-size: 48px;
     font-weight: 700;
@@ -9,6 +15,10 @@
     font-family: var(--fontMontserrat);
     color: var(--color4);
     letter-spacing: .1em;
+
+    @media (--sp) {
+      font-size: 24px;
+    }
   }
   .chackin-list {
     margin-top: 40px;
@@ -16,8 +26,16 @@
     .chackin__items {
       display: flex;
       margin-left: -25px;
+
+      @media (--sp) {
+        margin-left: -15px;
+      }
       .chackin__items-item {
         margin-left: 25px;
+
+        @media (--sp) {
+          margin-left: 15px;
+        }
         .chackin__items-inner {
           position: relative;
           .chackin__item-name {

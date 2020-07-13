@@ -6,11 +6,7 @@
         <p class="date item-date">2020.01.01</p>
         <div class="item-image"><img src="<%- conf.image %>/<%= projectName %>/blog.jpg" alt=""></div>
         <div class="item-body">
-          <ul class="item__tags">
-            <li class="item__tags-tag">NEWS</li>
-            <li class="item__tags-tag">MEDIA</li>
-            <li class="item__tags-tag">SAMPLE</li>
-          </ul>
+          <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
           <p class="item-text">テキストテテキストテキストテキストテキストキスト</p>
         </div>
       </div>

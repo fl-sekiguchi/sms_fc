@@ -1,14 +1,9 @@
 @import "./common/_global.css";
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
+@import "../components/parts/tag/tag.css";
 @import "../components/parts/pagination/pagination.css";
 @import "../components/live/list/list.css";
-
-.live__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-}
 
 .pagination {
   padding-top: 80px;

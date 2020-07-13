@@ -5,9 +5,3 @@
 @import "../components/schedule/head/head.css";
 @import "../components/schedule/list/list.css";
 @import "../components/schedule/filter/filter.css";
-
-.schedule__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-}

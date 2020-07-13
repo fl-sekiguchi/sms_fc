@@ -1,4 +1,6 @@
 @import "./common/_global.css";
+@import "../components/lib/slick/slick.css";
+@import "../components/lib/slick/slick-theme.css";
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
@@ -8,14 +10,3 @@
 @import "../components/parts/filter/category.css";
 @import "../components/parts/filter/month.css";
 @import "../components/news_detail/operation/operation.css";
-
-.news__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-
-  @media (--sp) {
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
-}

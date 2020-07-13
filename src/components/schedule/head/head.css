@@ -1,9 +1,16 @@
 .head {
+  @media (--sp) {
+    margin-bottom: 30px;
+  }
   .head__operation {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (--sp) {
+      margin-top: 30px;
+    }
 
     button {
       border: none;
@@ -12,6 +19,12 @@
       color: var(--color4);
       font-family: var(--fontNotoSansJP);
       font-size: 40px;
+      outline: none;
+      cursor: pointer;
+
+      @media (--sp) {
+        font-size: 24px;
+      }
     }
 
     .head__operation-date {
@@ -19,6 +32,10 @@
       font-family: var(--fontMontserrat);
       font-weight: 600;
       color: var(--color4);
+
+      @media (--sp) {
+        font-size: 24px;
+      }
     }
   }
 }

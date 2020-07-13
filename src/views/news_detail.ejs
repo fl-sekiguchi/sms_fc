@@ -3,7 +3,7 @@ const conf = {
     title : 'top',
     description : 'This is top page',
     style: 'news_detail.css',
-    script: 'index.js',
+    script: 'news_detail.js',
     image: '/images',
 };
 %>
@@ -13,7 +13,7 @@ const conf = {
 
 <main id="main" class="main" role="main">
   <div class="wrapper">
-    <div class="base news__base">
+    <div class="base base--main">
       <div class="inner">
         <%- include('../components/news_detail/head/head.ejs', { conf }) %>
         <div class="row news-detail">

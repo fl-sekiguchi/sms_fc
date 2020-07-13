@@ -1,6 +1,10 @@
 .photo__list {
   .photo__item {
     margin-bottom: 40px;
+
+    @media (--sp) {
+      margin-bottom: 25px;
+    }
     .photo-inner {
       display: block;
       position: relative;
@@ -15,28 +19,16 @@
       .photo__body {
         background-color: #fff;
         padding: 15px;
-
-        .photo__tags {
-          display: flex;
-          .photo__tags-item {
-            color: var(--color6);
-            font-family: var(--fontNotoSansJP);
-            border: 1px solid var(--color6);
-            border-radius: 20px;
-            padding: 2px 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            font-size: 10px;
-          }
-        }
         .photo__item-text {
           font-size: 14px;
           color: var(--color6);
           font-family: var(--fontNotoSansJP);
           margin-top: 10px;
           line-height: 1.4;
+
+          @media (--sp) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -44,6 +36,8 @@
 }
 
 .pagination {
-  padding-top: 70px;
-  padding-bottom: 0;
+  @media (--not-sp) {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
 }

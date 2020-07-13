@@ -1,8 +1,10 @@
 .article {
-  max-width: 755px;
-  width: calc(755 / 1140 * 100%);
   margin-left: auto;
   margin-right: auto;
+  @media (--not-sp) {
+    max-width: 755px;
+    width: calc(755 / 1140 * 100%);
+  }
   .article__cover {
     position: relative;
     .article__cover-date {
@@ -13,7 +15,13 @@
   }
 
   .article__body {
-    padding: 70px 25px 0;
+    @media (--not-sp) {
+      padding: 70px 25px 0;
+    }
+
+    @media (--sp) {
+      padding-top: 20px;
+    }
 
     .article-title {
       font-size: 24px;
@@ -21,6 +29,12 @@
       color: var(--color4);
       font-weight: 600;
       line-height: 1.4;
+
+      @media (--sp) {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
 
     .article-text {
@@ -29,18 +43,35 @@
       color: var(--color4);
       line-height: 1.6;
       margin-top: 30px;
+
+      @media (--sp) {
+        font-size: 12px;
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
 
     .article-photos {
       p {
         margin-top: 50px;
+
+        @media (--sp) {
+          margin-top: 20px;
+        }
       }
     }
   }
 
   .article__foot {
-    margin-top: 100px;
     text-align: center;
+    @media (--not-sp) {
+      margin-top: 100px;
+    }
+
+    @media (--sp) {
+      margin-top: 25px;
+    }
 
       .article__foot-bt {
         display: inline-flex;

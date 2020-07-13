@@ -19,11 +19,7 @@
           <div class="photo__item__cover-play"><img src="<%- conf.image %>/common/icon_play.png" alt=""></div>
         </div>
         <div class="photo__body">
-          <ul class="photo__tags">
-            <li class="photo__tags-item">NEWS</li>
-            <li class="photo__tags-item">MEDIA</li>
-            <li class="photo__tags-item">SAMPLE</li>
-          </ul>
+          <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
           <p class="photo__item-text">テキストテテキストテキストテキストテキストキスト</p>
         </div>
       </a>

@@ -3,7 +3,7 @@ const conf = {
     title : 'top',
     description : 'This is top page',
     style: 'live.css',
-    script: 'index.js',
+    script: 'live.js',
     image: '/images',
 };
 %>
@@ -13,7 +13,7 @@ const conf = {
 
 <main id="main" class="main" role="main">
   <div class="wrapper">
-    <div class="base live__base">
+    <div class="base base--main">
       <div class="inner">
         <%- include('../components/live/head/head.ejs', { conf }) %>
         <%- include('../components/live/list/list.ejs', { conf }) %>

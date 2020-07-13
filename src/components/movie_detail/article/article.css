@@ -16,10 +16,18 @@
   }
 
   .article__body {
-    padding-top: 70px;
-    width: calc(550 / 940 * 100%);
     margin: 0 auto;
-    max-width: 550px;
+
+    @media (--not-sp) {
+      padding-top: 70px;
+      width: calc(550 / 940 * 100%);
+      max-width: 550px;
+    }
+
+    @media (--sp) {
+      padding: 20px 15px;
+      background-color: #fff;
+    }
 
     .article-title {
       font-size: 24px;
@@ -27,6 +35,10 @@
       color: var(--color4);
       font-weight: 600;
       line-height: 1.4;
+
+      @media (--sp) {
+        font-size: 12px;
+      }
     }
 
     .article-text {
@@ -35,6 +47,11 @@
       color: var(--color4);
       line-height: 1.6;
       margin-top: 30px;
+
+      @media (--sp) {
+        font-size: 12px;
+        margin-top: 15px;
+      }
     }
 
     .article-photos {

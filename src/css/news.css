@@ -5,14 +5,3 @@
 @import "../components/news/head/head.css";
 @import "../components/news/list/list.css";
 @import "../components/news/filter/filter.css";
-
-.news__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-
-  @media (--sp) {
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
-}

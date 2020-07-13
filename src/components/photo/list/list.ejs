@@ -16,11 +16,7 @@
         <p class="date photo__item-date">2020.01.01</p>
         <p class="photo__item-image"><img src="<%- conf.image %>/<%= projectName %>/<%- value.image %>" alt=""></p>
         <div class="photo__body">
-          <ul class="photo__tags">
-            <li class="photo__tags-item">NEWS</li>
-            <li class="photo__tags-item">MEDIA</li>
-            <li class="photo__tags-item">SAMPLE</li>
-          </ul>
+          <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
           <p class="photo__item-text">テキストテテキストテキストテキストテキストキスト</p>
         </div>
       </a>

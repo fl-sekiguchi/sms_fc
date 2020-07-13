@@ -5,8 +5,7 @@ import notice from 'libraries-frontend-framelunch/js/notice';
 
 import subscribeEvents from './modules/_events';
 
-import '../components/top/banner/banner';
-import '../components/top/alert/alert';
+import '../components/mypage/favorite/favorite';
 
 class Main {
   onDOMContentLoaded = () => {

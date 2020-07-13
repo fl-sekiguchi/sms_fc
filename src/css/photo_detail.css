@@ -3,9 +3,3 @@
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
 @import "../components/photo_detail/article/article.css";
-
-.photo__base {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--color5);
-}
