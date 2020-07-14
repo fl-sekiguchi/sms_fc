@@ -3,7 +3,7 @@ const conf = {
     title : 'top',
     description : 'This is top page',
     style: 'ticket_detail.css',
-    script: 'index.js',
+    script: 'ticket_detail.js',
     image: '/images',
 };
 %>
@@ -21,7 +21,7 @@ const conf = {
             <%- include('../components/ticket_detail/article/article.ejs', { conf }) %>
           </div>
           <div class="col4">
-            <%- include('../components/ticket_detail/posts/posts.ejs', { conf }) %>
+            <%- include('../components/parts/posts/posts.ejs', { conf }) %>
             <%- include('../components/parts/filter/category.ejs', { conf, place: "sidebar" }) %>
             <%- include('../components/parts/filter/month.ejs', { conf, place: "sidebar" }) %>
           </div>

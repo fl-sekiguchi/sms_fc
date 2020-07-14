@@ -3,6 +3,8 @@
   padding: 45px 20px 100px;
   color: #fff;
   box-shadow: var(--dropShadowS);
+  border-radius: var(--borderRadius);
+  overflow: hidden;
 
   @media (--sp) {
     padding: 30px 25px;

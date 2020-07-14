@@ -7,7 +7,7 @@
 @import "../components/parts/pagination/pagination.css";
 @import "../components/news_detail/head/head.css";
 @import "../components/news_detail/article/article.css";
-@import "../components/news_detail/posts/posts.css";
+@import "../components/parts/posts/posts.css";
 @import "../components/parts/filter/category.css";
 @import "../components/parts/filter/month.css";
 @import "../components/news_detail/operation/operation.css";

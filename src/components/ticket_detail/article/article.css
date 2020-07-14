@@ -1,5 +1,7 @@
 .article {
   box-shadow: var(--dropShadowS);
+  border-radius: var(--borderRadius);
+  overflow: hidden;
   .article__cover {
     position: relative;
     .article__cover-date {

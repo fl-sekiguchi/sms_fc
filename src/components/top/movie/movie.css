@@ -39,14 +39,16 @@
       }
       .movie-body {
         box-shadow: var(--dropShadow);
-      }
-      .movie__cover {
         margin-top: 50px;
         position: relative;
+        border-radius: var(--borderRadius);
+        overflow: hidden;
 
         @media (--sp) {
           margin-top: 20px;
         }
+      }
+      .movie__cover {
         .movie__cover-date {
           position: absolute;
           top: 0;

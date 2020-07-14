@@ -8,6 +8,8 @@
   .article__cover {
     box-shadow: var(--dropShadowL);
     position: relative;
+    border-radius: var(--borderRadius);
+    overflow: hidden;
 
     .article__cover-play {
       position: absolute;

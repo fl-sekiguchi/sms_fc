@@ -40,6 +40,7 @@
         }
         a {
           box-shadow: var(--dropShadow);
+          border-radius: var(--borderRadius);
           background-color: #fff;
           display: block;
           text-decoration: none;

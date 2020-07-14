@@ -25,6 +25,7 @@
         a {
           display: block;
           box-shadow: var(--dropShadow);
+          border-radius: var(--borderRadius);
         }
 
         @media (--sp) {

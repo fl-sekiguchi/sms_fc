@@ -1,6 +1,7 @@
 .category {
   background-color: #fff;
   box-shadow: var(--dropShadowS);
+  border-radius: var(--borderRadius);
 
   @media (--sp) {
     padding: 25px 15px;

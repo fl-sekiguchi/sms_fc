@@ -7,6 +7,9 @@
   }
   .article__cover {
     position: relative;
+    .article__cover-image {
+      border-radius: var(--borderRadius);
+    }
     .article__cover-date {
       position: absolute;
       top: 0;
@@ -55,6 +58,8 @@
     .article-photos {
       p {
         margin-top: 50px;
+        border-radius: var(--borderRadius);
+        overflow: hidden;
 
         @media (--sp) {
           margin-top: 20px;

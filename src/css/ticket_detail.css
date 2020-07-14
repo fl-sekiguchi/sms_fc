@@ -3,8 +3,8 @@
 @import "../components/parts/date.css";
 @import "../components/parts/tag/tag.css";
 @import "../components/parts/pagination/pagination.css";
+@import "../components/parts/posts/posts.css";
 @import "../components/ticket_detail/head/head.css";
 @import "../components/ticket_detail/article/article.css";
-@import "../components/ticket_detail/posts/posts.css";
 @import "../components/parts/filter/category.css";
 @import "../components/parts/filter/month.css";

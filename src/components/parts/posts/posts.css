@@ -2,6 +2,7 @@
   background-color: #fff;
   padding: 0 15px 30px;
   box-shadow: var(--dropShadowS);
+  border-radius: var(--borderRadius);
 
   @media (--sp) {
     margin-top: 30px;
@@ -34,6 +35,7 @@
         margin-left: -20px;
       }
       .posts__item {
+        border-radius: var(--borderRadius);
         @media (--not-sp) {
           margin-top: 20px;
           padding-left: 20px;
@@ -46,6 +48,8 @@
           display: block;
           position: relative;
           text-decoration: none;
+          border-radius: var(--borderRadius);
+          overflow: hidden;
           .posts__item-tag {
             position: absolute;
             top: 0;

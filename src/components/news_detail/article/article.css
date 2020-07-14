@@ -1,5 +1,7 @@
 .article {
   box-shadow: var(--dropShadowS);
+  border-radius: var(--borderRadius);
+  overflow: hidden;
   .article__cover {
     position: relative;
     .article__cover-date {
@@ -38,6 +40,8 @@
           margin-top: 30px;
           line-height: 2;
           font-size: 18px;
+          border-radius: var(--borderRadius);
+          overflow: hidden;
 
           @media (--sp) {
             margin-top: 20px;

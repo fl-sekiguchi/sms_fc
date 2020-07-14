@@ -17,6 +17,8 @@
       padding: 20px;
       background-color: #fff;
       box-shadow: var(--dropShadowS);
+      border-radius: var(--borderRadius);
+      overflow: hidden;
       .card__body {
         margin-top: 20px;
 
