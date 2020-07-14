@@ -29,6 +29,8 @@
     font-size: 18px;
     color: var(--color4);
     letter-spacing: .05em;
+    cursor: pointer;
+    outline: none;
 
     @media (--sp) {
       font-size: 15px;

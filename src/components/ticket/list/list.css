@@ -1,52 +1,52 @@
-      .news__list {
+.list {
 
-        .news-item {
-          margin-bottom: 40px;
-        }
+  .item {
+    margin-bottom: 40px;
+  }
 
-        .news-inner {
-          background-color: #fff;
-          border-radius: 5px;
-          overflow: hidden;
-          box-shadow: var(--dropShadowS);
-          .news__head {
-            display: flex;
-            align-items: center;
-            .news__head-date {
-              margin-right: 10px;
-            }
-            .tag {
-              flex: 1;
-            }
+  .item-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--dropShadowS);
+    .item__head {
+      display: flex;
+      align-items: center;
+      .item__head-date {
+        margin-right: 10px;
+      }
+      .tag {
+        flex: 1;
+      }
 
-          }
-          .item__body {
-            padding: 20px;
+    }
+    .item__body {
+      padding: 20px;
 
-            @media (--sp) {
-              padding: 15px;
-            }
-            .item__body-text {
-              color: var(--color4);
-              font-family: var(--fontNotoSansJP);
-              font-size: 24px;
-              line-height: 1.6;
+      @media (--sp) {
+        padding: 15px;
+      }
+      .item__body-text {
+        color: var(--color4);
+        font-family: var(--fontNotoSansJP);
+        font-size: 24px;
+        line-height: 1.6;
 
-              @media (--sp) {
-                font-size: 12px;
-              }
-            }
-            .item__body-subtext {
-              color: #b7b7b7;
-              font-family: var(--fontNotoSansJP);
-              font-size: 18px;
-              line-height: 1.6;
-              margin-top: 15px;
-
-              @media (--sp) {
-                font-size: 12px;
-              }
-            }
-          }
+        @media (--sp) {
+          font-size: 12px;
         }
       }
+      .item__body-subtext {
+        color: #b7b7b7;
+        font-family: var(--fontNotoSansJP);
+        font-size: 18px;
+        line-height: 1.6;
+        margin-top: 15px;
+
+        @media (--sp) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

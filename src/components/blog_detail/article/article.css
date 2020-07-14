@@ -4,8 +4,12 @@
 
 .article-date {
   width: 120px;
-  margin: 40px auto;
+  margin: 40px auto 0;
   border-radius: 5px;
+
+  @media (--sp) {
+    margin-top: 0;
+  }
 }
 
 .article-title {
@@ -13,22 +17,42 @@
   text-align: center;
   color: var(--color4);
   margin-top: 40px;
+  font-weight: 600;
+
+  @media (--sp) {
+    font-size: 12px;
+    margin-top: 20px;
+  }
 }
 
 .article-image {
   margin-top: 50px;
+
+  @media (--sp) {
+    margin-top: 20px;
+  }
 }
 
 .article-text {
-  margin: 50px auto 0;
   color: var(--color4);
-  font-size: 18px;
   line-height: 1.6;
-  width: calc(748 / 1140 * 100%);
-  max-width: 748px;
+  margin: 50px auto 0;
+
+  @media (--not-sp) {
+    font-size: 18px;
+    width: calc(748 / 1140 * 100%);
+    max-width: 748px;
+  }
+
+  @media (--sp) {
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+  }
 }
 
 .article-button {
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   width: 160px;
 }

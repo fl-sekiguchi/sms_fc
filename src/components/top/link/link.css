@@ -58,6 +58,10 @@
               color: var(--color1);
               &::before {
                 font-size: 50px;
+
+                @media (--sp) {
+                  font-size: 40px;
+                }
               }
             }
           }

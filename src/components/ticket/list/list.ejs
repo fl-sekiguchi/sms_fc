@@ -1,4 +1,4 @@
-          <div class="news__list">
+          <div class="list">
             <div class="row">
               <%
                 const news = [
@@ -9,10 +9,10 @@
                 ]
               %>
               <% news.forEach(function (value, key) { _%>
-              <div class="col6 news-item">
-                <div class="news-inner">
-                  <div class="news__head">
-                    <p class="date news__head-date">2020.01.01</p>
+              <div class="col6 item">
+                <div class="item-inner">
+                  <div class="item__head">
+                    <p class="date item__head-date">2020.01.01</p>
                     <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
                   </div>
                   <div class="item__body">

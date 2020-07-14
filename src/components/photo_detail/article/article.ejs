@@ -10,8 +10,9 @@
       <p><img src="<%- conf.image %>/<%= projectName %>/photo_image.jpg" alt=""></p>
       <p><img src="<%- conf.image %>/<%= projectName %>/photo_image.jpg" alt=""></p>
     </div>
+    <%- include('../../parts/tag/tag.ejs', { conf, type: "foot" }) %>
   </div>
   <div class="article__foot">
-    <a class="button article__foot-bt" href="">BACK TOP</a>
+    <a class="button article__foot-bt" href="">BACK</a>
   </div>
 </div>

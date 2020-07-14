@@ -1,5 +1,6 @@
 @import "./common/_global.css";
 @import "../components/parts/button.css";
+@import "../components/parts/tag/tag.css";
 @import "../components/parts/date.css";
 @import "../components/parts/pagination/pagination.css";
 @import "../components/movie_detail/article/article.css";

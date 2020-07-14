@@ -48,14 +48,22 @@
     padding-bottom: 50px;
 
     @media (--sp) {
-      margin-top: 50px;
+      margin-top: 40px;
+      padding-bottom: 25px;
+      margin-right: 15px;
+    }
+
+    .tags {
+      @media (--sp) {
+        justify-content: flex-end;
+      }
     }
     .tags-item {
       @media (--not-sp) {
         font-size: 14px;
       }
       @media (--sp) {
-        font-size: 12px;
+        font-size: 8px;
       }
     }
   }

@@ -24,6 +24,7 @@
 
     @media (--sp) {
       padding-top: 20px;
+      background-color: #fff;
     }
 
     .article-title {

@@ -1,11 +1,8 @@
 .head {
-  position: relative;
-  .head-title {
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-    font-family: var(--fontMontserrat);
-    color: var(--color4);
-    letter-spacing: .1em;
+  @media (--not-sp) {
+    margin-bottom: 40px;
+  }
+  @media (--sp) {
+    margin-bottom: 25px;
   }
 }
