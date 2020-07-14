@@ -1,0 +1,51 @@
+.form__body {
+  input[type="text"],textarea {
+    background-color: var(--color5);
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--fontNotoSansJP);
+    padding: 10px 15px;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  textarea {
+    min-height: 270px;
+  }
+
+  select,
+  input[type="file"] {
+    font-size: initial;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  .aspform_button {
+    margin-top: 60px;
+    input[type="submit"] {
+      color: #fff;
+      background-color: var(--color4);
+    }
+  }
+}
+
+.form__item-value {
+  input[type="text"],textarea {
+    background-color: var(--color5);
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--fontNotoSansJP);
+    padding: 10px 15px;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  textarea {
+    min-height: 270px;
+  }
+}

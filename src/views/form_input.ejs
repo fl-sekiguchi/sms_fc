@@ -1,0 +1,33 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'form.css',
+    image: '/images',
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main -form" role="main">
+  <div class="wrapper">
+    <div class="base form__base">
+      <div class="inner">
+        <%- include('../components/form/head/head.ejs', { conf }) %>
+        <div class="form">
+          <div class="form__head">
+            <h2 class="form__head-title">テキストテキストテキストテキストテキストテキスト</h2>
+            <p class="form__head-text">テキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="form__body">
+            <%- include('../components/form/sample/_input.ejs', { conf }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

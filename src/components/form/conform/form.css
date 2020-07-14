@@ -1,0 +1,14 @@
+.form__body {
+  form[name="ques1"] {
+    input[type="submit"] {
+      color: #fff;
+      background-color: var(--color4);
+    }
+  }
+  form[name="ques2"] {
+    input[type="submit"] {
+      color: var(--color4);
+      background-color: var(--color5);
+    }
+  }
+}
