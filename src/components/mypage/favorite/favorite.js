@@ -11,7 +11,7 @@ notice.listen('init', () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '120px',
+    centerPadding: '18%',
     infinite: true,
     responsive: [
       {

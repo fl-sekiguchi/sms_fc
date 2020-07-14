@@ -9,6 +9,7 @@
       display: block;
       position: relative;
       text-decoration: none;
+      box-shadow: var(--dropShadow);
       .photo__item-date {
         position: absolute;
         top: 0;

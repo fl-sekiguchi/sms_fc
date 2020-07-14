@@ -3,6 +3,7 @@
 @import "../components/lib/slick/slick-theme.css";
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
+@import "../components/parts/tag/tag.css";
 @import "../components/parts/pagination/pagination.css";
 @import "../components/news_detail/head/head.css";
 @import "../components/news_detail/article/article.css";

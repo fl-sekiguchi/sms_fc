@@ -1,4 +1,5 @@
 .article {
+  box-shadow: var(--dropShadowS);
   .article__cover {
     position: relative;
     .article__cover-date {

@@ -8,11 +8,15 @@
           background-color: #fff;
           border-radius: 5px;
           overflow: hidden;
+          box-shadow: var(--dropShadowS);
           .news__head {
             display: flex;
             align-items: center;
             .news__head-date {
               margin-right: 10px;
+            }
+            .tag {
+              flex: 1;
             }
 
           }

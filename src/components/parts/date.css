@@ -12,7 +12,8 @@
   padding-right: 10px;
 
   @media (--not-sp) {
-    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 16px;
   }
 

@@ -6,8 +6,9 @@
   }
   .banner__base {
     background-color: var(--color5);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: var(--dropShadow);
     @media (--sp) {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -21,12 +22,20 @@
         padding-left: 15px;
         padding-right: 15px;
 
+        a {
+          display: block;
+          box-shadow: var(--dropShadow);
+        }
+
         @media (--sp) {
           padding-left: 7px;
           padding-right: 7px;
         }
       }
     }
+  }
+  .slick-list {
+    padding: 20px 0;
   }
   .slick-arrow {
     width: 54px;

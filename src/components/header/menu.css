@@ -161,6 +161,8 @@
             margin-top: 25px;
           }
           a {
+            display: block;
+            box-shadow: var(--dropShadow);
             img {
               width: 100%;
             }

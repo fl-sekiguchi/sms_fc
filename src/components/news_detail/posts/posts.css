@@ -1,6 +1,7 @@
 .posts {
   background-color: #fff;
   padding: 0 15px 30px;
+  box-shadow: var(--dropShadowS);
 
   @media (--sp) {
     margin-top: 30px;

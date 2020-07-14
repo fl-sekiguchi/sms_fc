@@ -13,6 +13,7 @@
     overflow: hidden;
     display: flex;
     position: relative;
+    box-shadow: var(--dropShadowL);
     .item-date {
       position: absolute;
       top: 0;

@@ -9,12 +9,12 @@
       display: block;
       position: relative;
       text-decoration: none;
+      box-shadow: var(--dropShadowS);
       .photo__item-date {
         position: absolute;
         top: 0;
         left: 0;
         font-size: 14px;
-        height: 33px;
       }
       .photo__body {
         background-color: #fff;

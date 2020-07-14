@@ -6,6 +6,7 @@
     margin-right: auto;
   }
   .article__cover {
+    box-shadow: var(--dropShadowL);
     position: relative;
 
     .article__cover-play {
@@ -23,6 +24,11 @@
       width: calc(550 / 940 * 100%);
       max-width: 550px;
       padding-top: 40px;
+    }
+
+    @media (--tb) {
+      width: auto;
+      max-width: none;
     }
 
     @media (--sp) {

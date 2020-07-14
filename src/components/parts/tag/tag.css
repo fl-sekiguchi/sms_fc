@@ -20,6 +20,18 @@
       }
     }
   }
+  &.tag--news {
+    flex: 1;
+    .tags-item {
+      @media (--not-sp) {
+        font-size: 12px;
+      }
+      @media (--sp) {
+        font-size: 8px;
+      }
+    }
+  }
+
   &.tag--normal {
     .tags-item {
       @media (--not-sp) {

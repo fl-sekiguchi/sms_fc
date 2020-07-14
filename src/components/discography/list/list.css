@@ -3,6 +3,10 @@
   .card {
     margin-bottom: 40px;
 
+    @media (--tb) {
+      width: 50%;
+    }
+
     @media (--sp) {
       margin-bottom: 20px;
     }
@@ -12,6 +16,7 @@
       text-decoration: none;
       padding: 20px;
       background-color: #fff;
+      box-shadow: var(--dropShadowS);
       .card__body {
         margin-top: 20px;
 
@@ -27,11 +32,14 @@
           border-radius: 5px;
           padding-top: 5px;
           padding-bottom: 5px;
-          height: auto;
+          margin-right: 10px;
 
           @media (--sp) {
             margin-right: 10px;
           }
+        }
+        .tag {
+          flex: 1;
         }
       }
       .card-text {

@@ -12,9 +12,6 @@
         <p><img src="<%- conf.image %>/<%= projectName %>/top/news_image.jpg" alt=""></p>
       </div>
     </div>
-    <ul class="article__tags">
-      <li class="article__tags-item"><a href="">NEWS</a></li>
-      <li class="article__tags-item"><a href="">MEDIA</a></li>
-    </ul>
+    <%- include('../../parts/tag/tag.ejs', { conf, type: "foot" }) %>
   </div>
 </div>

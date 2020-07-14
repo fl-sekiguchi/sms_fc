@@ -60,6 +60,7 @@ img {
 
   &.base--main {
     background-color: var(--color5);
+    box-shadow: var(--dropShadow);
 
     @media (--not-sp) {
       padding-top: 80px;

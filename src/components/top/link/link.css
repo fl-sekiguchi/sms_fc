@@ -8,6 +8,7 @@
     padding-bottom: 70px;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--dropShadow);
 
     @media (--sp) {
       padding-top: 40px;
@@ -38,6 +39,7 @@
           padding-left: 18px;
         }
         a {
+          box-shadow: var(--dropShadow);
           background-color: #fff;
           display: block;
           text-decoration: none;

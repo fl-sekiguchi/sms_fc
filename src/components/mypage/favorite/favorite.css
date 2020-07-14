@@ -3,6 +3,7 @@
   background-color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: var(--dropShadowS);
 
   @media (--sp) {
     margin-top: 25px;
