@@ -10,8 +10,8 @@
     padding-bottom: 40px;
     box-shadow: var(--dropShadow);
     @media (--sp) {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     .banner__items {
       display: flex;
@@ -29,8 +29,7 @@
         }
 
         @media (--sp) {
-          padding-left: 7px;
-          padding-right: 7px;
+          padding: 20px 7px;
         }
       }
     }
@@ -76,7 +75,7 @@
   }
   .slick-dots {
     @media (--sp) {
-      bottom: -15px;
+      bottom: -5px;
     }
   }
   .slick-dots li {
