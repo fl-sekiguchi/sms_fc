@@ -1,23 +1,23 @@
-          <div class="news__list">
-            <div class="row">
-              <%
-                const news = [
-                  { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-                  { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-                  { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-                  { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-                ]
-              %>
-              <% news.forEach(function (value, key) { _%>
-              <div class="col6 news-item">
-                <div class="news-inner">
-                  <div class="news__head">
-                    <p class="date news__head-date">2020.01.01</p>
-                    <%- include('../../parts/tag/tag.ejs', { conf, type: "news" }) %>
-                  </div>
-                  <p class="news-text">テキストテテキストテキストテキストテキストキスト</p>
-                </div>
-              </div>
-              <% }); _%>
-            </div>
-          </div>
+<div class="list">
+  <div class="row">
+    <%
+      const news = [
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
+      ]
+    %>
+    <% news.forEach(function (value, key) { _%>
+    <div class="col6 item">
+      <a href="/news_detail.html" class="item-inner">
+        <div class="item__head">
+          <p class="date item__head-date">2020.01.01</p>
+          <%- include('../../parts/tag/tag.ejs', { conf, type: "news" }) %>
+        </div>
+        <p class="item-text">テキストテテキストテキストテキストテキストキスト</p>
+      </a>
+    </div>
+    <% }); _%>
+  </div>
+</div>

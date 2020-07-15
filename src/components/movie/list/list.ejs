@@ -1,4 +1,4 @@
-<div class="photo__list">
+<div class="list">
   <div class="row">
     <%
       const list = [
@@ -11,16 +11,16 @@
       ]
     %>
     <% list.forEach(function (value, key) { _%>
-    <div class="col4 photo__item">
-      <a class="photo-inner" href="">
-        <p class="date photo__item-date">2020.01.01</p>
-        <div class="photo__item__cover">
-          <p class="photo__item__cover-image"><img src="<%- conf.image %>/<%= projectName %>/<%- value.image %>" alt=""></p>
-          <div class="photo__item__cover-play"><img src="<%- conf.image %>/common/icon_play.png" alt=""></div>
+    <div class="col4 item">
+      <a class="item-inner" href="/movie_detail.html">
+        <p class="date item-date">2020.01.01</p>
+        <div class="item__cover">
+          <p class="item__cover-image"><img src="<%- conf.image %>/<%= projectName %>/<%- value.image %>" alt=""></p>
+          <div class="item__cover-play"><img src="<%- conf.image %>/common/icon_play.png" alt=""></div>
         </div>
-        <div class="photo__body">
+        <div class="item__body">
           <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
-          <p class="photo__item-text">テキストテテキストテキストテキストテキストキスト</p>
+          <p class="item-text">テキストテテキストテキストテキストテキストキスト</p>
         </div>
       </a>
     </div>

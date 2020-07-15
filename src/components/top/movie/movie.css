@@ -47,6 +47,10 @@
         @media (--sp) {
           margin-top: 20px;
         }
+
+        a {
+          text-decoration: none;
+        }
       }
       .movie__cover {
         .movie__cover-date {

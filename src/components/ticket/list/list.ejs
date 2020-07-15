@@ -10,7 +10,7 @@
               %>
               <% news.forEach(function (value, key) { _%>
               <div class="col6 item">
-                <div class="item-inner">
+                <a class="item-inner" href="/ticket_detail.html">
                   <div class="item__head">
                     <p class="date item__head-date">2020.01.01</p>
                     <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
@@ -19,7 +19,7 @@
                     <p class="item__body-text">テキストテテキストテキストテキストテキストキスト</p>
                     <p class="item__body-subtext">テキストテテキストテキストテキストテキストキスト</p>
                   </div>
-                </div>
+                </a>
               </div>
               <% }); _%>
             </div>

@@ -48,6 +48,7 @@
       border: none;
       background: none;
       outline: none;
+      cursor: pointer;
       @media (--sp) {
         right: 10px;
       }

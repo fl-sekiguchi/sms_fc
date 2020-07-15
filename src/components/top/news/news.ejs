@@ -15,19 +15,19 @@
               %>
               <% news.forEach(function (value, key) { _%>
               <div class="col6 news-item">
-                <div class="news-inner">
+                <a class="news-inner" href="/news_detail.html">
                   <div class="news__head">
                     <p class="date news__head-date">2020.01.01</p>
                     <%- include('../../parts/tag/tag.ejs', { conf, type: "news" }) %>
                   </div>
                   <p class="news-text">テキストテテキストテキストテキストテキストキスト</p>
-                </div>
+                </a>
               </div>
               <% }); _%>
             </div>
           </div>
         </div>
-        <a class="button news-bt">ALL NEWS</a>
+        <a class="button news-bt" href="/news.html">ALL NEWS</a>
       </div>
     </div>
   </div>

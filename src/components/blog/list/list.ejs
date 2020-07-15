@@ -2,14 +2,14 @@
   <div class="row">
     <% for (var i = 0; i < 10; i++) { %>
     <div class="col6 item">
-      <div class="item-inner">
+      <a class="item-inner" href="/blog_detail.html">
         <p class="date item-date">2020.01.01</p>
         <div class="item-image"><img src="<%- conf.image %>/<%= projectName %>/blog.jpg" alt=""></div>
         <div class="item-body">
           <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
           <p class="item-text">テキストテテキストテキストテキストテキストキスト</p>
         </div>
-      </div>
+      </a>
     </div>
     <% } %>
   </div>

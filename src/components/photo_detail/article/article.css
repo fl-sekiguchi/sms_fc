@@ -72,7 +72,7 @@
   .article__foot {
     text-align: center;
     @media (--not-sp) {
-      margin-top: 100px;
+      margin-top: 50px;
     }
 
     @media (--sp) {

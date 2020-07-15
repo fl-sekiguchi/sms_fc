@@ -4,19 +4,19 @@
         <ul class="link__items">
           <%
             const links = [
-              { name: "news", fontawesome: "far fa-newspaper", text: "NEWS", href: "" },
-              { name: "movie", fontawesome: "fas fa-film", text: "MOVIE", href: "" },
-              { name: "photo", fontawesome: "fas fa-camera", text: "PHOTO", href: "" },
-              { name: "tickets", fontawesome: "fas fa-ticket-alt", text: "TICKETS", href: "" },
-              { name: "blog", fontawesome: "far fa-edit", text: "BLOG", href: "" },
-              { name: "live", fontawesome: "fas fa-music", text: "LIVE", href: "" },
-              { name: "radio", fontawesome: "fas fa-headphones-alt", text: "RADIO", href: "" },
-              { name: "schedule", fontawesome: "far fa-calendar-alt", text: "SCHEDULE", href: "" },
+              { name: "news", fontawesome: "far fa-newspaper", text: "NEWS", href: "/news.html" },
+              { name: "movie", fontawesome: "fas fa-film", text: "MOVIE", href: "/movie.html" },
+              { name: "photo", fontawesome: "fas fa-camera", text: "PHOTO", href: "/photo.html" },
+              { name: "tickets", fontawesome: "fas fa-ticket-alt", text: "TICKETS", href: "/ticket.html" },
+              { name: "blog", fontawesome: "far fa-edit", text: "BLOG", href: "/blog.html" },
+              { name: "live", fontawesome: "fas fa-music", text: "LIVE", href: "/live.html" },
+              { name: "radio", fontawesome: "fas fa-headphones-alt", text: "RADIO", href: "/radio.html" },
+              { name: "schedule", fontawesome: "far fa-calendar-alt", text: "SCHEDULE", href: "/schedule.html" },
               { name: "special", fontawesome: "far fa-star", text: "SPECIAL", href: "" },
             ]
           %>
           <% links.forEach(function (value, key) { _%>
-          <li class="link__items-item"><a href="">
+          <li class="link__items-item"><a href="<%- value.href %>">
             <div class="link-icon link-icon--<%- value.name %>"><i class="<%- value.fontawesome %>"></i></div>
             <p class="link-text"><%- value.text %></p>
           </a></li>
