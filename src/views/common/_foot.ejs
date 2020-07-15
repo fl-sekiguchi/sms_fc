@@ -11,6 +11,9 @@
 </script>
 <% } %>
 
+<% if (typeof conf.brightcove === 'object') { %>
+<script src="//players.brightcove.net/<%= conf.brightcove.accountId %>/default_default/index.min.js"></script>
+<% } %>
 <script src="/js/vendor.bundle.js"></script>
 <script src="/js/common.js"></script>
 <%

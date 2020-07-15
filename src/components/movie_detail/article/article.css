@@ -20,7 +20,7 @@
       width: calc(80 / 362 * 100%);
     }
 
-    .article__cover-embed {
+    .article__cover-embed--iframe {
       position: relative;
       padding-top: 56.25%;
       iframe {
@@ -31,6 +31,19 @@
         left: 0;
         width: 100%;
         height: 100%;
+      }
+    }
+
+    .article__cover-embed--video {
+      @media (--not-sp) {
+        height: calc(560 / 1440 * 100vw);
+      }
+
+      @media (--sp) {
+        height: calc(446 / 749 * 100vw);
+      }
+      .bc-player-default_default {
+        width: 100%;
       }
     }
   }
