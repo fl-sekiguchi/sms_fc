@@ -20,7 +20,8 @@
       margin-top: 80px;
 
       @media (--sp) {
-        margin-top: 40px;
+        width: 135px;
+        margin: 40px auto 0;
       }
     }
 }

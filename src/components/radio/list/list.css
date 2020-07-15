@@ -19,6 +19,23 @@
     .item__cover {
       width: calc(170 / 560 * 100%);
       position: relative;
+      min-width: 170px;
+
+      .item__cover-image {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          max-width: none;
+          transform: translate(-50%, -50%);
+        }
+      }
 
       .item__cover-play {
         position: absolute;
@@ -40,19 +57,19 @@
     .item-head {
       display: flex;
       align-items: flex-start;
+      flex-wrap: wrap;
 
       .item-date {
         border-radius: 5px;
         margin-right: 15px;
+        margin-bottom: 15px;
       }
-
       .tag {
-        flex: 1;
+        margin-bottom: 15px;
       }
     }
 
     .item-text {
-      margin-top: 15px;
       color: var(--color4);
       font-family: var(--fontNotoSansJP);
       font-size: 18px;
@@ -60,7 +77,6 @@
 
       @media (--sp) {
         font-size: 12px;
-        margin-top: 10px;
       }
     }
   }
