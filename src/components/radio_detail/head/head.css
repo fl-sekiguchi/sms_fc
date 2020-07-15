@@ -1,0 +1,8 @@
+.head {
+  @media (--not-sp) {
+    margin-bottom: 40px;
+  }
+  @media (--sp) {
+    margin-bottom: 25px;
+  }
+}

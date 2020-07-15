@@ -1,0 +1,277 @@
+.radio__operation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: var(--color7);
+    cursor: pointer;
+  }
+  .radio__operation-toggle {
+    width: 46px;
+    height: 46px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (--sp) {
+      width: 36px;
+      height: 36px;
+    }
+    &:not(.-isplay) {
+      &::before {
+        content: "▶︎";
+        color: #fff;
+        font-size: 20px;
+        @media (--sp) {
+          font-size: 16px;
+        }
+      }
+    }
+    &.-isPlay {
+      &::before,
+      &::after {
+        content: "";
+        height: 20px;
+        width: 7px;
+        background-color: #fff;
+        margin: 0 2px;
+        display: block;
+      }
+    }
+  }
+  .radio__operation-prev,
+  .radio__operation-next {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    letter-spacing: -.1em;
+    font-size: 12px;
+
+    @media (--sp) {
+      width: 22px;
+      height: 22px;
+      font-size: 10px;
+    }
+  }
+}
+
+.radio-player {
+  .bc-player-default_default {
+    width: auto;
+    height: auto;
+  }
+}
+
+    /* ----------------------------------
+
+    背景色の変更
+
+    -------------------------------------*/
+
+    .radio-player .video-js .bc-player-default_default.vjs-plugins-ready .vjs-tech {
+        background: #FFF !important;
+    }
+
+    .radio-player .video-js .bc-player-default_default .vjs-poster {
+        background: #FFF !important;
+    }
+
+    .radio-player .video-js .bc-iframe body,
+    .bc-player-default_default {
+        background-color: #FFF !important;
+    }
+
+    /* ----------------------------------
+
+    使用しないボタンの削除
+
+    -------------------------------------*/
+
+    /* デフォルトの再生ボタン(1回のみ)*/
+    .radio-player .bc-player-default_default.vjs-mouse .vjs-big-play-button {
+        display: none !important;
+    }
+
+    .radio-player .bc-player-default_default .vjs-big-play-button {
+        display: none !important;
+    }
+
+    /* 右クリック時のオリジナルメニュー*/
+    .radio-player .bc-player-default_default.vjs-mouse .vjs-menu {
+        display: none !important;
+    }
+
+    .radio-player .bc-player-default_default .vjs-menu {
+        display: none !important;
+    }
+
+    /* 再生ボタン*/
+    .vjs-play-control {
+        display: none !important;
+    }
+
+    /* 時間区切りのスラッシュ */
+    .radio-player .vjs-current-time+.vjs-time-divider {
+        display: none !important;
+    }
+
+    /* ボリューム */
+    .radio-player .bc-player-default_default.vjs-mouse .vjs-volume-menu-button {
+        display: none;
+    }
+
+    .radio-player .bc-player-default_default .vjs-volume-menu-button {
+        display: none;
+    }
+
+    /* フルスクリーン */
+    .radio-player .vjs-fullscreen-control {
+        display: none;
+    }
+
+    /* ----------------------------------
+
+    コントロール部分のデフォルトアニメーションの削除
+
+    -------------------------------------*/
+
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar,
+    .radio-player .video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+    .radio-player .video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+    .radio-player .video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+    .radio-player .video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),
+    .radio-player .video-js.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar,
+    .radio-player .video-js.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible) {
+        transform: none;
+    }
+
+    .radio-player .bc-player-default_default .vjs-control-bar .vjs-control,
+    .radio-player .bc-player-default_default .vjs-control-bar .vjs-time-divider {
+      transition: none;
+    }
+
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control,
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar,
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-progress-control,
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-time-divider {
+      transition-delay: unset;
+    }
+
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar {
+        margin-left: 0;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .radio-player .bc-player-default_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-progress-control {
+        transform: translateY(0);
+        width: 100%;
+    }
+
+    .radio-player .bc-player-default_default.vjs-has-started.vjs-user-inactive .vjs-control,
+    .radio-player .bc-player-default_default.vjs-has-started.vjs-user-inactive .vjs-time-divider {
+        height: 33px;
+        width: 48px;
+    }
+
+    .radio-player .bc-player-default_default .vjs-has-started.vjs-user-inactive .vjs-control {
+        height: 33px;
+        width: 48px;
+    }
+
+    .radio-player .bc-player-default_default .vjs-progress-control {
+        width: 100%;
+    }
+
+    .radio-player .bc-player-default_default.vjs-has-started.vjs-user-inactive .vjs-time-divider {
+        width: 4px;
+    }
+
+    @media (max-width: 480px) {
+        .bc-player-default_default:not(.vjs-has-started) .vjs-control-bar {
+            visibility: visible;
+        }
+    }
+
+    /* ----------------------------------
+
+    プレイヤーのレイアウトデザイン
+
+    -------------------------------------*/
+
+    /* 色背景など全体 */
+    .radio-player .bc-player-default_default.vjs-mouse .vjs-control-bar {
+        color: #000;
+        border: none;
+        background: #fff;
+        display: block;
+        position: relative;
+        height: 100%;
+        top: 0;
+        line-height: 33px;
+    }
+
+    /* 色背景など全体(スマフォ) */
+    .radio-player .bc-player-default_default .vjs-control-bar {
+        color: #000;
+        border: none;
+        background: #fff;
+        display: block;
+        position: relative;
+        height: 100%;
+        top: 0;
+        line-height: 33px;
+    }
+
+    /* 開始時間 */
+    .radio-player .bc-player-default_default .vjs-current-time {
+        position: relative;
+        display: inline-block;
+        float: left;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* 終了時間 */
+    .radio-player .bc-player-default_default .vjs-duration {
+        position: relative;
+        display: inline-block;
+        float: right;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* シークバー */
+    .radio-player .bc-player-default_default .vjs-progress-holder {
+        position: relative;
+        bottom: -20px;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    /* シークバー(全体) */
+    .radio-player .bc-player-default_default .vjs-progress-holder::before {
+        background: var(--color7);
+        z-index: -1;
+    }
+
+    /* シークバー(プレイ時間カラー) */
+    .radio-player .bc-player-default_default .vjs-play-progress,
+    .bc-player-default_default .vjs-volume-level {
+        background-color: var(--color4);
+        background-image: none;
+    }
+
+    /* シークバー(ロードカラー) */
+    .radio-player .bc-player-default_default .vjs-load-progress {
+      background-color: var(--color4);
+      opacity: .5;
+    }

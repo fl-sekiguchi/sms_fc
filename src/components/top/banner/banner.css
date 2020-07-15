@@ -74,6 +74,8 @@
     }
   }
   .slick-dots {
+    left: 0;
+    right: 0;
     @media (--sp) {
       bottom: -5px;
     }

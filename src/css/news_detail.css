@@ -1,4 +1,6 @@
 @import "./common/_global.css";
+@import "./common/_variables.css";
+@import "./common/_grid.css";
 @import "../components/lib/slick/slick.css";
 @import "../components/lib/slick/slick-theme.css";
 @import "../components/parts/button.css";

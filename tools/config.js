@@ -97,6 +97,7 @@ exports.script = {
     'js/top': './src/js/top.js',
     'js/news_detail': './src/js/news_detail.js',
     'js/ticket_detail': './src/js/ticket_detail.js',
+    'js/radio_detail': './src/js/radio_detail.js',
     'js/live': './src/js/live.js',
     'js/mypage': './src/js/mypage.js',
   },

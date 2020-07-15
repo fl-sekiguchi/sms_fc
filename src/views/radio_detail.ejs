@@ -2,7 +2,8 @@
 const conf = {
     title : 'top',
     description : 'This is top page',
-    style: 'blog_detail.css',
+    style: 'radio_detail.css',
+    script: ['https://players.brightcove.net/4504957038001/default_default/index.min.js', 'radio_detail.js'],
     image: '/images',
 };
 %>
@@ -14,11 +15,8 @@ const conf = {
   <div class="wrapper">
     <div class="base base--main">
       <div class="inner">
-        <%- include('../components/blog_detail/head/head.ejs', { conf }) %>
-      </div>
-        <%- include('../components/blog_detail/article/article.ejs', { conf }) %>
-      <div class="inner">
-        <%- include('../components/blog_detail/filter/filter.ejs', { conf }) %>
+          <%- include('../components/radio_detail/head/head.ejs', { conf }) %>
+        <%- include('../components/radio_detail/article/article.ejs', { conf }) %>
       </div>
     </div>
   </div>

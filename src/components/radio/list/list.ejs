@@ -1,0 +1,21 @@
+<div class="list">
+  <div class="row">
+    <% for (var i = 0; i < 10; i++) { %>
+    <div class="col6 item">
+      <a class="item-inner" href="">
+        <div class="item__cover">
+          <p class="item__cover-image"><img src="<%- conf.image %>/<%= projectName %>/blog.jpg" alt=""></p>
+          <div class="item__cover-play"><img src="<%- conf.image %>/common/icon_play.png" alt=""></div>
+        </div>
+        <div class="item-content">
+          <div class="item-head">
+            <p class="date item-date">2020.01.01</p>
+            <%- include('../../parts/tag/tag.ejs', { conf, type: "normal" }) %>
+          </div>
+          <p class="item-text">テキストテテキストテキストテキストテキストキスト</p>
+        </div>
+      </a>
+    </div>
+    <% } %>
+  </div>
+</div>

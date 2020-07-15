@@ -1,4 +1,6 @@
 @import "./common/_global.css";
+@import "./common/_variables.css";
+@import "./common/_grid.css";
 @import "../components/parts/button.css";
 @import "../components/parts/pagination/pagination.css";
 @import "../components/form/input/form.css";

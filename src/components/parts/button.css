@@ -9,15 +9,16 @@
   background-color: var(--color4);
   font-size: 24px;
   border: none;
-  letter-spacing: .1em;
 
   @media (--not-sp) {
     height: 50px;
+    letter-spacing: .05em;
   }
 
   @media (--sp) {
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
+    letter-spacing: .1em;
   }
 }

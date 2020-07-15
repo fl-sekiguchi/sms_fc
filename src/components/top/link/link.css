@@ -33,6 +33,14 @@
           width: 20%;
         }
 
+        @media (--tb-h) {
+          width: 25%;
+        }
+
+        @media (--tb) {
+          width: calc(100% / 3);
+        }
+
         @media (--sp) {
           width: calc(100% / 3);
           margin-top: 20px;
