@@ -57,7 +57,7 @@
 .form__body {
   font-size: 28px;
   font-family: var(--fontNotoSansJP);
-  color: var(--textColor2);
+  color: var(--textColor1);
 
   @media (--sp) {
     font-size: 14px;
@@ -88,7 +88,7 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 24px;
-    border: none;
+    border: 1px solid var(--bgColor2);
     letter-spacing: .1em;
     width: 228px;
     height: 56px;
@@ -107,7 +107,11 @@
   .form__head-text {
     margin-top: 70px;
     font-weight: 500;
-    color: var(--textColor2);
+    color: var(--textColor1);
+
+    @media (--sp) {
+      margin-top: 30px;
+    }
   }
   .operation {
     margin-top: 90px;

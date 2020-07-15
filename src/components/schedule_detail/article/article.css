@@ -34,9 +34,9 @@
       .article__head__tags-tag {
         font-size: 12px;
         font-family: var(--fontNotoSansJP);
-        color: var(--textColor2);
+        color: var(--textColor1);
         margin-left: 15px;
-        border: 1px solid var(--textColor2);
+        border: 1px solid var(--textColor1);
         border-radius: 10px;
         padding: 2px 10px;
 
@@ -46,7 +46,7 @@
       }
       .article__head__tags-time {
         font-size: 13px;
-        color: var(--textColor2);
+        color: var(--textColor1);
         margin-left: 20px;
         font-family: var(--fontNotoSansJP);
 

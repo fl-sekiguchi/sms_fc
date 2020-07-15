@@ -204,7 +204,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--bgColor2);
+        background-color: var(--bgColor1);
         border-radius: 50%;
         overflow: hidden;
         text-decoration: none;
@@ -214,7 +214,7 @@
           height: 25px;
         }
         i {
-          color: #fff;
+          color: var(--textColor1);
           &::before {
             font-size: 30px;
 

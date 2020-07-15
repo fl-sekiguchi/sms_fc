@@ -42,10 +42,10 @@
       @media (--sp) {
         margin-top: 10px;
         padding-left: 6px;
-        border-right: 1px solid var(--textColor2);
+        border-right: 1px solid var(--textColor1);
       }
       a {
-        color: var(--textColor2);
+        color: var(--textColor1);
         font-family: var(--fontNotoSansJP);
         padding: 2px 10px;
         text-decoration: none;
@@ -83,12 +83,13 @@
 
       .month__items-list {
         @media (--not-sp) {
-          border-right: 1px solid var(--textColor2);
+          border-right: 1px solid var(--textColor1);
         }
         a {
           display: flex;
           align-items: center;
           justify-content: center;
+          color: var(--textColor1);
 
           @media (--not-sp) {
             font-size: 20px;

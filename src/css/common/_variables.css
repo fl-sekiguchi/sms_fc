@@ -3,12 +3,13 @@
   --fontNotoSansJP : 'Noto Sans JP', sans-serif;
   --textColor1: #000;
   --textColor2: #fff;
+  --textColor3: #4c5e94;
   --bgColor1: #fff;
   --bgColor2: #000;
   --bgColor3: #2a3b73;
-  --color7: #939fca; /* ラジオプレイヤーで使用 */
-  --dropShadow: 0 0 20px 0 rgba(42, 59, 115, 0.4);
-  --dropShadowS: 0 0 20px 0 rgba(42, 59, 115, 0.1);
-  --dropShadowL: 0 0 60px 0 rgba(42, 59, 115, 0.2);
+  --bgColor4: #ecf6fb;
+  --dropShadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  --dropShadowS: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  --dropShadowL: 0 0 60px 0 rgba(0, 0, 0, 0.2);
   --borderRadius: 5px;
 }
