@@ -10,7 +10,7 @@
 .form__base {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: var(--color5);
+  background-color: var(--bgColor2);
 }
 
 .form {
@@ -34,7 +34,7 @@
   font-size: 28px;
   font-family: var(--fontNotoSansJP);
   font-weight: 600;
-  color: var(--color4);
+  color: var(--textColor1);
   line-height: 1.4;
 
   @media (--sp) {
@@ -45,7 +45,7 @@
 .form__head-text {
   font-size: 24px;
   font-family: var(--fontNotoSansJP);
-  color: var(--color4);
+  color: var(--textColor1);
   line-height: 1.4;
   margin-top: 25px;
 
@@ -57,7 +57,7 @@
 .form__body {
   font-size: 28px;
   font-family: var(--fontNotoSansJP);
-  color: var(--color6);
+  color: var(--textColor2);
 
   @media (--sp) {
     font-size: 14px;
@@ -107,7 +107,7 @@
   .form__head-text {
     margin-top: 70px;
     font-weight: 500;
-    color: var(--color6);
+    color: var(--textColor2);
   }
   .operation {
     margin-top: 90px;

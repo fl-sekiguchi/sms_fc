@@ -266,12 +266,12 @@
     /* シークバー(プレイ時間カラー) */
     .radio-player .bc-player-default_default .vjs-play-progress,
     .bc-player-default_default .vjs-volume-level {
-        background-color: var(--color4);
+        background-color: var(--textColor1);
         background-image: none;
     }
 
     /* シークバー(ロードカラー) */
     .radio-player .bc-player-default_default .vjs-load-progress {
-      background-color: var(--color4);
+      background-color: var(--textColor1);
       opacity: .5;
     }

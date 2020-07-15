@@ -3,7 +3,7 @@
     margin-top: 70px;
   }
   .news__base {
-    background-color: var(--color5);
+    background-color: var(--bgColor2);
     padding-top: 70px;
     padding-bottom: 45px;
     position: relative;
@@ -32,7 +32,7 @@
         font-weight: 700;
         text-align: center;
         font-family: var(--fontMontserrat);
-        color: var(--color4);
+        color: var(--textColor2);
         letter-spacing: .1em;
 
         @media (--sp) {
@@ -73,7 +73,7 @@
           }
           .news-text {
             padding: 20px;
-            color: var(--color4);
+            color: var(--textColor1);
             font-family: var(--fontNotoSansJP);
             font-size: 18px;
             line-height: 1.6;

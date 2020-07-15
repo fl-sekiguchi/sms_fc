@@ -54,7 +54,7 @@
       }
       svg {
         fill: none;
-        stroke: var(--color4);
+        stroke: var(--textColor1);
         @media (--sp) {
           width: 30px;
         }
@@ -66,9 +66,9 @@
     .article__head-tag {
       font-size: 12px;
       font-family: var(--fontMontserrat);
-      color: var(--color6);
+      color: var(--textColor2);
       margin-left: 15px;
-      border: 1px solid var(--color6);
+      border: 1px solid var(--textColor2);
       border-radius: 10px;
       padding: 2px 10px;
     }
@@ -77,7 +77,7 @@
   .article-title {
     font-size: 24px;
     font-family: var(--fontNotoSansJP);
-    color: var(--color4);
+    color: var(--textColor1);
     font-weight: 600;
     line-height: 1.4;
     padding: 30px 60px 30px 30px;
@@ -98,7 +98,7 @@
     .article-text {
       font-size: 18px;
       font-family: var(--fontNotoSansJP);
-      color: var(--color4);
+      color: var(--textColor1);
       line-height: 1.6;
 
       @media (--sp) {

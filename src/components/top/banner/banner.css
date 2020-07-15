@@ -5,7 +5,7 @@
     }
   }
   .banner__base {
-    background-color: var(--color5);
+    background-color: var(--bgColor2);
     padding-top: 40px;
     padding-bottom: 40px;
     box-shadow: var(--dropShadow);
@@ -93,7 +93,7 @@
     button {
       width: 100%;
       height: 100%;
-      background-color: var(--color4);
+      background-color: var(--textColor1);
       opacity: .5;
       &::before {
         content: normal;

@@ -8,7 +8,7 @@
   }
 
   .category-title {
-    color: var(--color4);
+    color: var(--textColor1);
     font-family: var(--fontMontserrat);
     letter-spacing: 0.05em;
 
@@ -45,9 +45,9 @@
         padding-left: 6px;
       }
       a {
-        color: var(--color6);
+        color: var(--textColor2);
         font-family: var(--fontNotoSansJP);
-        border: 1px solid var(--color6);
+        border: 1px solid var(--textColor2);
         border-radius: 20px;
         padding: 2px 10px;
         display: flex;

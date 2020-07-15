@@ -1,12 +1,11 @@
 :root {
   --fontMontserrat : 'Montserrat', sans-serif;
   --fontNotoSansJP : 'Noto Sans JP', sans-serif;
-  --color1: #6ed8db;
-  --color2: #6ec5cb;
-  --color3: #abe8ef;
-  --color4: #2a3b73;
-  --color5: #ecf6fb;
-  --color6: #4c5e94;
+  --textColor1: #000;
+  --textColor2: #fff;
+  --bgColor1: #fff;
+  --bgColor2: #000;
+  --bgColor3: #2a3b73;
   --color7: #939fca; /* ラジオプレイヤーで使用 */
   --dropShadow: 0 0 20px 0 rgba(42, 59, 115, 0.4);
   --dropShadowS: 0 0 20px 0 rgba(42, 59, 115, 0.1);

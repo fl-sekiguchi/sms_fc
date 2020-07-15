@@ -46,7 +46,7 @@
       }
       .card-text {
         font-size: 14px;
-        color: var(--color6);
+        color: var(--textColor2);
         font-family: var(--fontNotoSansJP);
         margin-top: 10px;
         line-height: 1.4;

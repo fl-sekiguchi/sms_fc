@@ -35,10 +35,10 @@
           padding: 20px 0 20px 15px;
         }
         .card__item-title {
-          color: var(--color6);
+          color: var(--textColor2);
         }
         .card__item-value {
-          color: var(--color6);
+          color: var(--textColor2);
           font-size: 36px;
 
           @media (--sp) {
@@ -48,7 +48,7 @@
       }
       &.card__item--number {
         .card__item-inner {
-          background-color: var(--color5);
+          background-color: var(--bgColor2);
           padding: 20px 30px 20px 30px;
 
           @media (--sp) {
@@ -56,10 +56,10 @@
           }
         }
         .card__item-title {
-          color: var(--color4);
+          color: var(--textColor1);
         }
         .card__item-value {
-          color: var(--color4);
+          color: var(--textColor1);
           font-size: 36px;
 
           @media (--sp) {
@@ -75,10 +75,10 @@
         }
 
         .card__item-title {
-          color: var(--color4);
+          color: var(--textColor1);
         }
         .card__item-value {
-          color: var(--color4);
+          color: var(--textColor1);
           font-size: 32px;
 
           @media (--sp) {
@@ -93,10 +93,10 @@
           padding: 0 15px 25px 15px;
         }
         .card__item-title {
-          color: var(--color4);
+          color: var(--textColor1);
         }
         .card__item-value {
-          color: var(--color4);
+          color: var(--textColor1);
           font-size: 32px;
 
           @media (--sp) {

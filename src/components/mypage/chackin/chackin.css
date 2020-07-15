@@ -16,7 +16,7 @@
     font-weight: 700;
     text-align: center;
     font-family: var(--fontMontserrat);
-    color: var(--color4);
+    color: var(--textColor1);
     letter-spacing: .1em;
 
     @media (--sp) {
@@ -45,7 +45,7 @@
             font-family: var(--fontMontserrat);
             font-size: 32px;
             font-weight: 600;
-            color: var(--color4);
+            color: var(--textColor1);
             letter-spacing: .1em;
             position: absolute;
             bottom: 5px;
