@@ -28,7 +28,9 @@
 <% } %>
 
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
 <%
     conf.style = conf.style || [];
     if (typeof conf.style === 'string') {
@@ -36,9 +38,7 @@
     }
     conf.style.forEach(style => {
 %>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<%= style.match(/^https?:/) != null ? style : `/css/${style}` %>">
+    <link rel="stylesheet" href="<%= style.match(/^https?:/) != null ? style : `./css/${style}` %>">
 <% }) %>
 <% if (typeof conf.ldJson === 'object') { %>
     <script type="application/ld+json"><%- JSON.stringify(conf.ldJson) %></script>

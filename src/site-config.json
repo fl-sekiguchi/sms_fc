@@ -1,4 +1,5 @@
 {
     "lang": "ja",
-    "projectName": "temp"
+    "projectName": "temp",
+    "imagePath": "./images"
 }
