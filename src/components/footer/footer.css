@@ -2,7 +2,7 @@
     /* footer style here */
     padding-bottom: 170px;
     text-align: center;
-    background-color: var(--color5);
+    background-color: var(--bgColor3);
 
     @media (--not-sp) {
       padding-top: 70px;
@@ -58,7 +58,7 @@
 
     svg {
       path {
-        fill: var(--color1);
+        fill: var(--textColor1);
       }
     }
   }
@@ -68,7 +68,7 @@
     font-size: 24px;
     font-weight: 600;
     font-family: var(--fontMontserrat);
-    color: var(--color1);
+    color: var(--textColor1);
 
     @media (--sp) {
       font-size: 12px;
@@ -78,7 +78,7 @@
 
 .sitesupport {
   margin: 0 auto;
-  background-color: var(--color1);
+  background-color: var(--bgColor5);
   @media (--not-sp) {
     width: 680px;
   }
@@ -204,7 +204,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--color1);
+        background-color: var(--textColor1);
         border-radius: 50%;
         overflow: hidden;
         text-decoration: none;
@@ -230,7 +230,7 @@
 
 .jasrac {
   margin-top:50px;
-  color: var(--color1);
+  color: var(--textColor1);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.6;
@@ -247,7 +247,7 @@
 .copyright {
   display: block;
   margin-top: 40px;
-  color: var(--color1);
+  color: var(--textColor1);
   font-size: 24px;
   font-weight: 500;
   letter-spacing: .05em;

@@ -3,7 +3,7 @@
     margin-top: 70px;
   }
   .movie__base {
-    background-color: var(--color3);
+    background-color: var(--bgColor2);
     padding-top: 70px;
     padding-bottom: 85px;
     position: relative;
@@ -30,7 +30,7 @@
         font-weight: 700;
         text-align: center;
         font-family: var(--fontMontserrat);
-        color: var(--color4);
+        color: var(--textColor2);
         letter-spacing: .1em;
 
         @media (--sp) {
@@ -83,7 +83,7 @@
         }
         .movie__texts-title {
           font-size: 36px;
-          color: var(--color4);
+          color: var(--textColor2);
           font-family: var(--fontMontserrat);
           font-weight: 700;
           letter-spacing: .05em;
@@ -94,7 +94,7 @@
         }
         .movie__texts-text {
           font-size: 18px;
-          color: var(--color4);
+          color: var(--textColor2);
           font-family: var(--fontNotoSansJP);
           margin-top: 15px;
 

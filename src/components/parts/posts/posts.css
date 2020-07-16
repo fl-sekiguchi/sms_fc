@@ -12,7 +12,7 @@
   .posts-title {
     font-size: 24px;
     font-family: var(--fontMontserrat);
-    color: var(--color4);
+    color: var(--textColor2);
     padding-top: 30px;
     padding-bottom: 30px;
     letter-spacing: 0.05em;
@@ -63,8 +63,8 @@
             }
           }
           .posts__item-text {
-            color: var(--color4);
-            background-color: var(--color5);
+            color: var(--textColor2);
+            background-color: var(--bgColor3);
             padding: 10px 5px;
             font-size: 12px;
 

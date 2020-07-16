@@ -16,7 +16,7 @@
     font-weight: 700;
     text-align: center;
     font-family: var(--fontMontserrat);
-    color: var(--color4);
+    color: var(--textColor2);
     letter-spacing: .1em;
 
     @media (--sp) {

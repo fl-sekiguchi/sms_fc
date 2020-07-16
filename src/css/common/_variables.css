@@ -1,13 +1,15 @@
 :root {
   --fontMontserrat : 'Montserrat', sans-serif;
   --fontNotoSansJP : 'Noto Sans JP', sans-serif;
-  --color1: #6ed8db;
-  --color2: #6ec5cb;
-  --color3: #abe8ef;
-  --color4: #2a3b73;
-  --color5: #ecf6fb;
-  --color6: #4c5e94;
-  --color7: #939fca; /* ラジオプレイヤーで使用 */
+  --textColor1: #6ed8db;
+  --textColor2: #2a3b73;
+  --textColor3: #4c5e94;
+  --bgColor1: #6ec5cb; /* メニューボタンの背景色のみ */
+  --bgColor2: #abe8ef;
+  --bgColor3: #ecf6fb;
+  --bgColor4: #939fca; /* ラジオプレイヤーで使用 */
+  --bgColor5: #6ed8db;
+  --bgColor6: #2a3b73;
   --dropShadow: 0 0 20px 0 rgba(42, 59, 115, 0.4);
   --dropShadowS: 0 0 20px 0 rgba(42, 59, 115, 0.1);
   --dropShadowL: 0 0 60px 0 rgba(42, 59, 115, 0.2);

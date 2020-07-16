@@ -1,7 +1,7 @@
 .fixedCard {
   position: fixed;
   left: 0;
-  background-color: var(--color4);
+  background-color: var(--bgColor6);
   display: flex;
   align-items: center;
   color: #fff;

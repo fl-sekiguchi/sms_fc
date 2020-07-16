@@ -12,10 +12,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid var(--color6);
+        border: 1px solid var(--textColor3);
         border-radius: 20px;
         padding: 2px 10px;
-        color: var(--color6);
+        color: var(--textColor3);
         font-family: var(--fontNotoSansJP);
       }
     }

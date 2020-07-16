@@ -7,7 +7,7 @@
     border: none;
     outline: none;
     border-radius: 50%;
-    background-color: var(--color7);
+    background-color: var(--bgColor4);
     cursor: pointer;
   }
   .radio__operation-toggle {
@@ -259,19 +259,19 @@
 
     /* シークバー(全体) */
     .radio-player .bc-player-default_default .vjs-progress-holder::before {
-        background: var(--color7);
+        background: var(--bgColor4);
         z-index: -1;
     }
 
     /* シークバー(プレイ時間カラー) */
     .radio-player .bc-player-default_default .vjs-play-progress,
     .bc-player-default_default .vjs-volume-level {
-        background-color: var(--color4);
+        background-color: var(--bgColor6);
         background-image: none;
     }
 
     /* シークバー(ロードカラー) */
     .radio-player .bc-player-default_default .vjs-load-progress {
-      background-color: var(--color4);
+      background-color: var(--bgColor6);
       opacity: .5;
     }
