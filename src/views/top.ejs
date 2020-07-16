@@ -6,9 +6,25 @@ const conf = {
     script: 'top.js',
     image: imagePath,
 };
+const og = {
+  type: "website",
+  image: "",
+  url: "top url",
+  siteName: "サイト名",
+}
+const twitter = {
+  card: "summary",
+  site: "",
+}
+const favicon = [
+  '<link rel="icon" href="images/icon/favicon.ico">',
+  '<link rel="icon" href="images/icon/favicon-192.png" type="image/png" size="192x192">',
+  '<link rel="apple-touch-icon" href="images/icon/apple-touch-icon.png">',
+  '<link rel="apple-touch-icon" href="images/icon/apple-touch-icon-180.png" size="180x180">',
+]
 %>
 
-<%- include('./common/_head.ejs', { conf }) %>
+<%- include('./common/_head.ejs', { conf, og, twitter, favicon }) %>
 <%- include('../components/parts/loading/loading.ejs', { conf }) %>
 <div class="preload">
 <%- include('../components/header/header.ejs', { conf }) %>
