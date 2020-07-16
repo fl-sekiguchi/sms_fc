@@ -14,16 +14,16 @@
 <% if (typeof conf.brightcove === 'object') { %>
 <script src="//players.brightcove.net/<%= conf.brightcove.accountId %>/default_default/index.min.js"></script>
 <% } %>
-<script src="/js/vendor.bundle.js"></script>
-<script src="/js/common.js"></script>
+<script src="./js/vendor.bundle.js"></script>
+<script src="./js/common.js"></script>
 <%
 conf.script = conf.script || [];
 if (typeof conf.script === 'string') {
   conf.script = [conf.script];
 }
 conf.script.forEach(script => {
-%>
-<script src="<%= script.match(/^https?:/) != null ? script : `/js/${script}` %>"></script>
-<% }) %>
+_%>
+<script src="<%= script.match(/^https?:/) != null ? script : `./js/${script}` %>"></script>
+<% }) _%>
 </body>
 </html>
