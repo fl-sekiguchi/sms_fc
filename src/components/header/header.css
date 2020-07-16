@@ -16,7 +16,7 @@
     }
     .header-logo__image {
       @media (--sp) {
-        width: calc(315px / 2);
+        width: calc(179px / 2);
       }
     }
   }

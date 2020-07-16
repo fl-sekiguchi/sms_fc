@@ -4,6 +4,7 @@
   }
 
   .mv__image {
+    text-align: center;
     box-shadow: var(--dropShadow);
   }
 }
@@ -11,27 +12,7 @@
 .header {
   .header-logo {
     @media (--sp) {
-      height: auto;
-      position: absolute;
-      display: block;
-      background: none;
-      left: 0;
-      right: 0;
-      top: 30px;
-      padding-left: 0;
-    }
-
-    .header-logo__image {
-      @media (--sp) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    .header-logo__subtitle {
-      @media (--sp) {
-        display: block !important;
-      }
+      display: none;
     }
   }
 }
