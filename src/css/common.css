@@ -1,6 +1,7 @@
 @import "libraries-frontend-framelunch/css/_reset.css";
 @import "./common/_variables.css";
 @import "./common/_grid.css";
+@import "../components/parts/loading/loading.css";
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
 @import "../components/animation/fade.css";

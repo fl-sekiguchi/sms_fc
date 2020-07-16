@@ -9,6 +9,8 @@ const conf = {
 %>
 
 <%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/parts/loading/loading.ejs', { conf }) %>
+<div class="preload">
 <%- include('../components/header/header.ejs', { conf }) %>
 
 <main id="main" class="main" role="main">
@@ -24,4 +26,5 @@ const conf = {
 </main>
 
 <%- include('../components/footer/footer.ejs', { conf }) %>
+</div>
 <%- include('./common/_foot.ejs', { conf }) %>
