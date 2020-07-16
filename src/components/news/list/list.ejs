@@ -9,7 +9,7 @@
       ]
     %>
     <% news.forEach(function (value, key) { _%>
-    <div class="col6 item">
+    <div class="col6 item fade" data-fade-direction="bottom">
       <a href="/news_detail.html" class="item-inner">
         <div class="item__head">
           <p class="date item__head-date<% if (value.isNew) { %> date--new<% } %>">2020.01.01</p>

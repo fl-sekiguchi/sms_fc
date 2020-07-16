@@ -3,6 +3,7 @@
 @import "./common/_grid.css";
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
+@import "../components/animation/fade.css";
 @import "../components/parts/head.css";
 @import "../components/header/menu.css";
 
