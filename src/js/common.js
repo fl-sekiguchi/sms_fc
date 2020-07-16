@@ -7,6 +7,7 @@ import subscribeEvents from './modules/_events';
 
 import '../components/header/menu';
 import '../components/footer/footer';
+import '../components/animation/fade';
 
 class Main {
   onDOMContentLoaded = () => {
