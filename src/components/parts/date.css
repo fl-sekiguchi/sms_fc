@@ -22,3 +22,18 @@
     padding: 5px;
   }
 }
+
+&.date--new {
+  &::after {
+    content: "NEW";
+    color: #000;
+    background-color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 2px 4px;
+
+    @media (--sp) {
+      font-size: 8px;
+    }
+  }
+}

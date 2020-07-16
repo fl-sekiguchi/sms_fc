@@ -14,13 +14,7 @@
     .item__head {
       display: flex;
       align-items: center;
-      .item__head-date {
-        margin-right: 10px;
-      }
-      .tag {
-        flex: 1;
-      }
-
+      flex-wrap: wrap;
     }
     .item__body {
       padding: 20px;

@@ -2,17 +2,17 @@
   <div class="row">
     <%
       const news = [
-        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
-        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ] },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ], isNew: true, },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ], isNew: false, },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ], isNew: true, },
+        { date: "2020.01.01", tags: [ "NEWS", "MEDIA", "SAMPLE" ], isNew: true, },
       ]
     %>
     <% news.forEach(function (value, key) { _%>
     <div class="col6 item">
       <a href="/news_detail.html" class="item-inner">
         <div class="item__head">
-          <p class="date item__head-date">2020.01.01</p>
+          <p class="date item__head-date<% if (value.isNew) { %> date--new<% } %>">2020.01.01</p>
           <%- include('../../parts/tag/tag.ejs', { conf, type: "news" }) %>
         </div>
         <p class="item-text">テキストテテキストテキストテキストテキストキスト</p>
