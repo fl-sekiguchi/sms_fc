@@ -16,8 +16,8 @@ notice.listen('init', scrollTop => {
     const progress = (loadCnt / imageLength) * 100;
     loadingProgressBar.css('width', `${progress}%`);
     if (loadCnt >= imageLength) {
+      preload.addClass('-show');
       setTimeout(() => {
-        preload.addClass('-show');
         loading.fadeOut();
       }, 1000);
     }
