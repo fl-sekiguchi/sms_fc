@@ -4,7 +4,7 @@
 @import "../components/parts/button.css";
 @import "../components/parts/date.css";
 @import "../components/parts/tag/tag.css";
-@import "../components/parts/pagination/pagination.css";
+@import "../components/parts/pager/pager.css";
 @import "../components/news/head/head.css";
 @import "../components/news/list/list.css";
 @import "../components/news/filter/filter.css";

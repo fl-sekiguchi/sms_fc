@@ -108,6 +108,10 @@
     margin-top: 70px;
     font-weight: 500;
     color: var(--color6);
+
+    @media (--sp) {
+      margin-top: 30px;
+    }
   }
   .operation {
     margin-top: 90px;
