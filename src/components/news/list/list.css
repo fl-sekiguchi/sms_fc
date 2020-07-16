@@ -16,14 +16,8 @@
     text-decoration: none;
     .item__head {
       display: flex;
-      align-items: center;
-      .item__head-date {
-        margin-right: 15px;
-
-        @media (--sp) {
-          margin-right: 10px;
-        }
-      }
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
     .item-text {
       padding: 20px;

@@ -21,8 +21,14 @@
     }
   }
   &.tag--news {
-    flex: 1;
+    @media (--not-sp) {
+      margin-left: 20px;
+    }
+    @media (--sp) {
+      margin-left: 10px;
+    }
     .tags-item {
+      margin-top: 10px;
       @media (--not-sp) {
         font-size: 12px;
       }
