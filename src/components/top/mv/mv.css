@@ -11,8 +11,6 @@
 
 .header {
   .header-logo {
-    @media (--sp) {
-      display: none;
-    }
+    display: none;
   }
 }

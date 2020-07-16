@@ -85,3 +85,44 @@ img {
     width: calc(100% - 20px);
   }
 }
+
+
+
+/* 仮で画像の上に#606060置く対応 */
+.movie__cover-image,
+.banner__items-item a,
+.article__cover-image,
+.posts__item-image,
+.photo__item-image,
+.article-photos p,
+.item__cover-image,
+.item-image,
+.article-image,
+.card-cover,
+.favorite__items-inner,
+.chackin__items-inner,
+.article__main-image {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #606060;
+  }
+}
+
+.item-cover {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #606060;
+  }
+}
