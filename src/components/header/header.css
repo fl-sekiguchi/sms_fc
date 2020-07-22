@@ -11,7 +11,6 @@
       display: flex;
       align-items: center;
       height: 45px;
-      background-color: var(--bgColor2);
       padding-left: 15px;
     }
     .header-logo__image {

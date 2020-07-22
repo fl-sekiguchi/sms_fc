@@ -5,6 +5,7 @@ const conf = {
     style: 'top.css',
     script: 'top.js',
     image: imagePath,
+    color: '1'
 };
 const og = {
   type: "website",
@@ -24,7 +25,7 @@ const favicon = [
 ]
 %>
 
-<%- include('./common/_head.ejs', { conf, og, twitter, favicon }) %>
+<%- include('./common/_head.ejs', { conf, og, twitter, favicon,  }) %>
 <%- include('../components/parts/loading/loading.ejs', { conf }) %>
 <div class="preload">
 <%- include('../components/header/header.ejs', { conf }) %>

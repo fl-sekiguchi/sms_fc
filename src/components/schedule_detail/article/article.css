@@ -34,9 +34,9 @@
       .article__head__tags-tag {
         font-size: 12px;
         font-family: var(--fontNotoSansJP);
-        color: var(--textColor3);
         margin-left: 15px;
-        border: 1px solid var(--textColor3);
+        border-width: 1px;
+        border-style: solid;
         border-radius: 10px;
         padding: 2px 10px;
 
@@ -46,7 +46,6 @@
       }
       .article__head__tags-time {
         font-size: 13px;
-        color: var(--textColor3);
         margin-left: 20px;
         font-family: var(--fontNotoSansJP);
 
@@ -68,7 +67,6 @@
     .article-title {
       font-size: 24px;
       font-family: var(--fontNotoSansJP);
-      color: var(--textColor2);
       font-weight: 600;
       line-height: 1.4;
 
@@ -80,7 +78,6 @@
     .article-text {
       font-size: 18px;
       font-family: var(--fontNotoSansJP);
-      color: var(--textColor2);
       line-height: 1.6;
       margin-top: 30px;
 

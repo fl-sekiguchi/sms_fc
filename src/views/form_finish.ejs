@@ -4,6 +4,7 @@ const conf = {
     description : 'This is top page',
     style: 'form.css',
     image: imagePath,
+    color: '1',
 };
 %>
 
@@ -17,8 +18,8 @@ const conf = {
         <%- include('../components/form/head/head.ejs', { conf }) %>
         <div class="form">
           <div class="form__head">
-            <h2 class="form__head-title">記入内容の完了</h2>
-            <h2 class="form__head-text">ありがとうございました。</h2>
+            <h2 class="form__head-title -textColor2">記入内容の完了</h2>
+            <h2 class="form__head-text -textColor3">ありがとうございました。</h2>
           </div>
         </div>
         <%- include('../components/form/finish/operation.ejs', { conf }) %>

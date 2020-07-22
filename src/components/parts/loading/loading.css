@@ -8,7 +8,6 @@
 }
 
 .loading {
-  background-color: var(--bgColor5);
   position: fixed;
   top: 0;
   left: 0;

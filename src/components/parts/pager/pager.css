@@ -14,7 +14,6 @@
     a,
     span {
       font-size: 16px;
-      color: var(--textColor2);
       font-family: var(--fontNotoSansJP);
       padding: 5px 10px;
       display: block;
@@ -60,7 +59,6 @@
 
     span {
       color: #fff;
-      background-color: var(--bgColor6);
       border-radius: 5px;
     }
   }

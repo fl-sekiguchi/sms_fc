@@ -23,7 +23,6 @@
 
     .article__body {
       font-family: var(--fontNotoSansJP);
-      color: var(--textColor2);
       .article__item {
         .article__title {
           font-size: 24px;
@@ -48,24 +47,6 @@
           @media (--sp) {
             margin-top: 50px;
           }
-        }
-      }
-    }
-
-    .article__tags {
-      padding-top: 30px;
-      padding-bottom: 40px;
-      display: flex;
-      .article__tags-item {
-        margin-right: 10px;
-        border: 1px solid var(--textColor3);
-        border-radius: 10px;
-        padding: 2px 10px;
-        a {
-          font-size: 14px;
-          font-family: var(--fontMontserrat);
-          color: var(--textColor3);
-          text-decoration: none;
         }
       }
     }

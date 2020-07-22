@@ -4,9 +4,5 @@
   .button {
     width: 228px;
     margin-right: 40px;
-    &.button--back {
-      color: var(--textColor2);
-      background-color: var(--bgColor3);
-    }
   }
 }

@@ -11,7 +11,6 @@
             }
             .item-date {
               font-family: var(--fontMontserrat);
-              background-color: var(--bgColor6);
               color: #fff;
               display: flex;
               flex-direction: column;
@@ -45,8 +44,8 @@
                 align-items: center;
                 .item__head-tag {
                   font-size: 12px;
-                  color: var(--textColor3);
-                  border: 1px solid var(--textColor3);
+                  border-width: 1px;
+                  border-style: solid;
                   padding: 2px 10px;
                   display: inline-flex;
                   border-radius: 10px;
@@ -58,7 +57,6 @@
                 }
                 .item__head-date {
                   font-size: 13px;
-                  color: var(--textColor3);
                   font-family: var(--fontNotoSansJP);
                   margin-left: 20px;
 
@@ -70,7 +68,6 @@
               }
               .item__text {
                 font-size: 18px;
-                color: var(--textColor2);
                 margin-top: 15px;
                 line-height: 1.4;
 
@@ -79,43 +76,6 @@
                 }
               }
             }
-          }
-        }
-
-        .news-item {
-          margin-bottom: 40px;
-
-          @media (--sp) {
-            margin-bottom: 20px;
-          }
-        }
-
-        .news-inner {
-          background-color: #fff;
-          border-radius: 5px;
-          overflow: hidden;
-          .news__head {
-            display: flex;
-            align-items: center;
-            .news__tags {
-              display: flex;
-              .news__tags-item {
-                font-size: 12px;
-                font-family: var(--fontMontserrat);
-                color: var(--textColor3);
-                margin-left: 10px;
-                border: 1px solid var(--textColor3);
-                border-radius: 10px;
-                padding: 2px 10px;
-              }
-            }
-          }
-          .news-text {
-            padding: 20px;
-            color: var(--textColor2);
-            font-family: var(--fontNotoSansJP);
-            font-size: 18px;
-            line-height: 1.6;
           }
         }
       }

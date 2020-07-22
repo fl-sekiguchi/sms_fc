@@ -9,13 +9,13 @@
               %>
               <% list.forEach(function (value, key) { _%>
               <div class="item">
-                <div class="item-date"><strong><%- value.day %></strong><%- value.week %></div>
+                <div class="item-date -bgColor6"><strong><%- value.day %></strong><%- value.week %></div>
                 <div class="item__body">
                   <div class="item__head">
-                    <p class="item__head-tag"><%- value.tag %></p>
-                    <p class="item__head-date"><%- value.time %></p>
+                    <p class="item__head-tag -textColor3 -borderColor1"><%- value.tag %></p>
+                    <p class="item__head-date -textColor3"><%- value.time %></p>
                   </div>
-                  <p class="item__text"><%- value.text %></p>
+                  <p class="item__text -textColor2"><%- value.text %></p>
                 </div>
               </div>
               <% }); _%>

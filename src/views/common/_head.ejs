@@ -51,4 +51,8 @@ _%>
 <% } %>
 
 </head>
+<% if (typeof conf.color === 'string' ) { %>
+<body class="-color<%- conf.color %>">
+<% } else { %>
 <body>
+<% } %>

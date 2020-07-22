@@ -1,0 +1,7 @@
+.form__body {
+  form[name="ques1"] {
+    input[type="submit"] {
+      color: #fff;
+    }
+  }
+}

@@ -1,10 +1,10 @@
-<footer id="footer" class="footer">
+<footer id="footer" class="footer -bgColor3">
   <div class="base footer__base">
     <button class="pagetop">
       <div class="pagetop__icon"><%- include('../include/pagetop.ejs', { }) %></div>
-      <p class="pagetop__text">PAGE TOP</p>
+      <p class="pagetop__text -textColor1">PAGE TOP</p>
     </button>
-    <div class="sitesupport">
+    <div class="sitesupport -bgColor5">
       <button class="sitesupport-toggle">SITE SUPPORT<span></span></button>
       <div class="sitesupport-list">
         <ul class="sitesupport__items">
@@ -39,12 +39,12 @@
           ]
         %>
         <% socials.forEach(function (value, key) { _%>
-        <li class="social__items-item"><a href=""><i class="<%- value.fontawesome %>"></i></a></li>
+        <li class="social__items-item"><a href="" class="-bgColor5"><i class="<%- value.fontawesome %>"></i></a></li>
         <% }); _%>
       </ul>
     </div>
     <div class="footer-logo"><img src="<%- conf.image %>/common/logo_foot.png" alt=""></div>
-    <p class="jasrac">[JASRAC許可番号]<br>6709411168Y45037 | 6709411165Y31015</p>
-    <small class="copyright">&copy;Sony Music Solutions Inc.</small>
+    <p class="jasrac -textColor1">[JASRAC許可番号]<br>6709411168Y45037 | 6709411165Y31015</p>
+    <small class="copyright -textColor1">&copy;Sony Music Solutions Inc.</small>
   </div>
 </footer>

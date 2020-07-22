@@ -23,7 +23,6 @@
         padding: 15px;
         .photo__item-text {
           font-size: 14px;
-          color: var(--textColor3);
           font-family: var(--fontNotoSansJP);
           margin-top: 10px;
           line-height: 1.4;

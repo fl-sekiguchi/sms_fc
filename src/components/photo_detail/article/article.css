@@ -30,7 +30,6 @@
     .article-title {
       font-size: 24px;
       font-family: var(--fontNotoSansJP);
-      color: var(--textColor2);
       font-weight: 600;
       line-height: 1.4;
 
@@ -44,7 +43,6 @@
     .article-text {
       font-size: 18px;
       font-family: var(--fontNotoSansJP);
-      color: var(--textColor2);
       line-height: 1.6;
       margin-top: 30px;
 

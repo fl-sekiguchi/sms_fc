@@ -70,7 +70,6 @@
     }
 
     .item-text {
-      color: var(--textColor2);
       font-family: var(--fontNotoSansJP);
       font-size: 18px;
       line-height: 1.6;

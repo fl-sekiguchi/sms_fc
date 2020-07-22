@@ -1,5 +1,6 @@
 @import "libraries-frontend-framelunch/css/_variables.css";
 @import "libraries-frontend-framelunch/css/_keyframes.css";
+@import "./_color.css";
 
 body {
     font-family: var(--fontFamily-base);

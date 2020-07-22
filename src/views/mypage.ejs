@@ -5,6 +5,7 @@ const conf = {
     style: 'mypage.css',
     script: 'mypage.js',
     image: imagePath,
+    color: '1',
 };
 %>
 
@@ -21,7 +22,7 @@ const conf = {
             <%- include('../components/mypage/card/card.ejs', { conf }) %>
             <%- include('../components/mypage/favorite/favorite.ejs', { conf }) %>
             <%- include('../components/mypage/qrcode/qrcode.ejs', { conf }) %>
-            <%- include('../components/mypage/chackin/chackin.ejs', { conf }) %>
+            <%- include('../components/mypage/checkin/checkin.ejs', { conf }) %>
           </div>
           <div class="col4">
             <%- include('../components/mypage/member/member.ejs', { conf }) %>

@@ -1,6 +1,5 @@
 .form__body {
   input[type="text"],textarea {
-    background-color: var(--bgColor3);
     border: none;
     font-size: 24px;
     font-weight: 500;
@@ -28,24 +27,6 @@
     margin-top: 60px;
     input[type="submit"] {
       color: #fff;
-      background-color: var(--bgColor6);
     }
-  }
-}
-
-.form__item-value {
-  input[type="text"],textarea {
-    background-color: var(--bgColor3);
-    border: none;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: var(--fontNotoSansJP);
-    padding: 10px 15px;
-    width: 100%;
-    line-height: 1.4;
-  }
-
-  textarea {
-    min-height: 270px;
   }
 }
