@@ -8,7 +8,6 @@
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: var(--dropShadowS);
     text-decoration: none;
     display: block;
     .item__head {

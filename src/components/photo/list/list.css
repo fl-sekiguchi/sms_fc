@@ -9,7 +9,6 @@
       display: block;
       position: relative;
       text-decoration: none;
-      box-shadow: var(--dropShadowS);
       border-radius: var(--borderRadius);
       overflow: hidden;
       .photo__item-date {

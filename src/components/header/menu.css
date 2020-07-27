@@ -163,7 +163,6 @@
           }
           a {
             display: block;
-            box-shadow: var(--dropShadow);
             img {
               width: 100%;
             }

@@ -1,7 +1,6 @@
 .posts {
   background-color: #fff;
   padding: 0 15px 30px;
-  box-shadow: var(--dropShadowS);
   border-radius: var(--borderRadius);
 
   @media (--sp) {

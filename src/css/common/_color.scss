@@ -1,0 +1,227 @@
+:root {
+  --custom1-textColor1: #6ed8db;
+  --custom1-textColor2: #2a3b73;
+  --custom1-textColor3: #4c5e94;
+  --custom1-textColor4: #2a3b73;
+  --custom1-textColor5: #4c5e94;
+  --custom1-textColor6: #fff;
+  --custom1-borderColor1: #4c5e94;
+  --custom1-bgColor1: #6ec5cb;
+  --custom1-bgColor2: #abe8ef;
+  --custom1-bgColor2OnlySp: #abe8ef;
+  --custom1-bgColor3: #ecf6fb;
+  --custom1-bgColor4: #939fca;
+  --custom1-bgColor5: #6ed8db;
+  --custom1-bgColor6: #2a3b73;
+  --custom1-bgColor7: #fff;
+  --custom1-bgColor8: #6ed8db;
+  --custom1-dropShadow1: 0 0 20px 0 rgba(42, 59, 115, 0.4);
+  --custom1-dropShadow2: 0 0 20px 0 rgba(42, 59, 115, 0.1);
+  --custom1-dropShadow3: 0 0 60px 0 rgba(42, 59, 115, 0.2);
+
+  --custom2-textColor1: #fff;
+  --custom2-textColor2: #000;
+  --custom2-textColor3: #fff;
+  --custom2-textColor4: #fff;
+  --custom2-textColor5: #000;
+  --custom2-textColor6: #000;
+  --custom2-borderColor1: #000;
+  --custom2-bgColor1: #000;
+  --custom2-bgColor2: #000;
+  --custom2-bgColor2OnlySp: #000;
+  --custom2-bgColor3: #000;
+  --custom2-bgColor4: #000;
+  --custom2-bgColor5: #000;
+  --custom2-bgColor6: #2a3b73;
+  --custom2-bgColor7: #000;
+  --custom2-bgColor8: #fff;
+  --custom2-dropShadow1: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  --custom2-dropShadow2: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  --custom2-dropShadow3: 0 0 60px 0 rgba(0, 0, 0, 0.2);
+}
+$customLength: 2;
+
+/* 変数設定 */
+body {
+@for $i from 1 through $customLength {
+    &[data-color="#{$i}"] {
+      background-color: var(--custom#{$i}-bgColor5);
+      .-textColor1 {
+        color: var(--custom#{$i}-textColor1);
+      }
+      .-textColor2 {
+        color: var(--custom#{$i}-textColor2);
+        stroke: var(--custom#{$i}-textColor2);
+      }
+      .-textColor3 {
+        color: var(--custom#{$i}-textColor3);
+      }
+      .-textColor4 {
+        color: var(--custom#{$i}-textColor4);
+      }
+      .-textColor5 {
+        color: var(--custom#{$i}-textColor5);
+      }
+      .-textColor6 {
+        color: var(--custom#{$i}-textColor6);
+      }
+      .-borderColor1 {
+        border-color: var(--custom#{$i}-borderColor1);
+      }
+      .-bgColor1 {
+        background-color: var(--custom#{$i}-bgColor1);
+      }
+      .-bgColor2 {
+        background-color: var(--custom#{$i}-bgColor2);
+      }
+      .-bgColor2OnlySp {
+        @media (--sp) {
+          background-color: var(--custom#{$i}-bgColor2OnlySp);
+        }
+      }
+      .-bgColor3 {
+        background-color: var(--custom#{$i}-bgColor3);
+      }
+      .-bgColor4 {
+        background-color: var(--custom#{$i}-bgColor4);
+      }
+      .-bgColor5 {
+        background-color: var(--custom#{$i}-bgColor5);
+      }
+      .-bgColor6 {
+        background-color: var(--custom#{$i}-bgColor6);
+      }
+      .-bgColor7 {
+        background-color: var(--custom#{$i}-bgColor7);
+      }
+      .-bgColor8 {
+        background-color: var(--custom#{$i}-bgColor8);
+      }
+      .-dropshadow1 {
+        box-shadow: var(--custom#{$i}-dropShadow1);
+      }
+      .-dropshadow2 {
+        box-shadow: var(--custom#{$i}-dropShadow2);
+      }
+      .-dropshadow3 {
+        box-shadow: var(--custom#{$i}-dropShadow3);
+      }
+
+      .base--main,
+      .form__base {
+        background-color: var(--custom#{$i}-bgColor3);
+      }
+
+      .base--main {
+        box-shadow: var(--custom#{$i}-dropShadow1);
+      }
+
+      .button,
+      .date {
+        background-color: var(--custom#{$i}-bgColor6);
+      }
+
+      .sitesupport {
+        background-color: var(--custom#{$i}-bgColor8);
+        .sitesupport-toggle {
+          color: var(--custom#{$i}-textColor6);
+          span {
+            &::before,
+            &::after {
+              background-color: var(--custom#{$i}-bgColor7);
+            }
+          }
+        }
+        .sitesupport-list {
+          .sitesupport__items {
+            .sitesupport__items-item {
+              a {
+                color: var(--custom#{$i}-textColor6);
+              }
+            }
+          }
+        }
+      }
+
+      .social {
+        .social__items {
+          .social__items-item {
+            a {
+              background-color: var(--custom#{$i}-bgColor8);
+              i {
+                color: var(--custom#{$i}-textColor6);
+              }
+            }
+          }
+        }
+      }
+
+      .pagetop {
+        .pagetop__icon {
+          .cls-2 {
+            color: var(--custom#{$i}-textColor1);
+          }
+        }
+        .pagetop__text {
+          color: var(--custom#{$i}-textColor1);
+        }
+      }
+
+      .slick-dots li {
+        button {
+          background-color: var(--custom#{$i}-bgColor6);
+        }
+      }
+
+      /* radioプレイヤー */
+      /* シークバー(全体) */
+      .radio-player .bc-player-default_default .vjs-progress-holder::before {
+        background: var(--custom#{$i}-bgColor4);
+      }
+
+      /* シークバー(プレイ時間カラー) */
+      .radio-player .bc-player-default_default .vjs-play-progress,
+      .bc-player-default_default .vjs-volume-level {
+          background-color: var(--custom#{$i}-bgColor6);
+      }
+
+      /* シークバー(ロードカラー) */
+      .radio-player .bc-player-default_default .vjs-load-progress {
+        background-color: var(--custom#{$i}-bgColor6);
+      }
+
+      /* CMSで展開される箇所 */
+      form {
+        input[type="text"],textarea {
+          background-color: var(--custom#{$i}-bgColor3);
+        }
+        &[name="ques1"] {
+          input[type="submit"] {
+            background-color: var(--custom#{$i}-bgColor6);
+          }
+        }
+        &[name="ques2"] {
+          input[type="submit"] {
+            color: var(--custom#{$i}-textColor2);
+            background-color: var(--custom#{$i}-bgColor3);
+          }
+        }
+        .aspform_button {
+          input[type="submit"] {
+            background-color: var(--custom#{$i}-bgColor6);
+          }
+        }
+      }
+      .pager {
+        li {
+          a {
+            color: var(--custom#{$i}-textColor2);
+          }
+          span {
+            background-color: var(--custom#{$i}-bgColor6);
+          }
+        }
+      }
+    }
+  }
+}

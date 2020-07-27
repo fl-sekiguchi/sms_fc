@@ -13,7 +13,6 @@
 
   .article-inner {
     background-color: #fff;
-    box-shadow: var(--dropShadowL);
     border-radius: var(--borderRadius);
     overflow: hidden;
   }

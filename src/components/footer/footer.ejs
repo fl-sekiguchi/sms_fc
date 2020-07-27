@@ -2,9 +2,9 @@
   <div class="base footer__base">
     <button class="pagetop">
       <div class="pagetop__icon"><%- include('../include/pagetop.ejs', { }) %></div>
-      <p class="pagetop__text -textColor1">PAGE TOP</p>
+      <p class="pagetop__text">PAGE TOP</p>
     </button>
-    <div class="sitesupport -bgColor5">
+    <div class="sitesupport">
       <button class="sitesupport-toggle">SITE SUPPORT<span></span></button>
       <div class="sitesupport-list">
         <ul class="sitesupport__items">
@@ -39,7 +39,7 @@
           ]
         %>
         <% socials.forEach(function (value, key) { _%>
-        <li class="social__items-item"><a href="" class="-bgColor5"><i class="<%- value.fontawesome %>"></i></a></li>
+        <li class="social__items-item"><a href=""><i class="<%- value.fontawesome %>"></i></a></li>
         <% }); _%>
       </ul>
     </div>

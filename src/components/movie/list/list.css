@@ -9,7 +9,6 @@
       display: block;
       position: relative;
       text-decoration: none;
-      box-shadow: var(--dropShadow);
       border-radius: var(--borderRadius);
       overflow: hidden;
       .item-date {

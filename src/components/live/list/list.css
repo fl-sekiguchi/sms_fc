@@ -13,7 +13,6 @@
 
   .article {
     background-color: #fff;
-    box-shadow: var(--dropShadowS);
     border-radius: var(--borderRadius);
     overflow: hidden;
     &:not(:first-of-type) {

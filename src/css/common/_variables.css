@@ -1,8 +1,5 @@
 :root {
   --fontMontserrat : 'Montserrat', sans-serif;
   --fontNotoSansJP : 'Noto Sans JP', sans-serif;
-  --dropShadow: 0 0 20px 0 rgba(42, 59, 115, 0.4);
-  --dropShadowS: 0 0 20px 0 rgba(42, 59, 115, 0.1);
-  --dropShadowL: 0 0 60px 0 rgba(42, 59, 115, 0.2);
   --borderRadius: 5px;
 }

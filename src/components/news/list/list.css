@@ -11,7 +11,6 @@
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: var(--dropShadowS);
     display: block;
     text-decoration: none;
     .item__head {

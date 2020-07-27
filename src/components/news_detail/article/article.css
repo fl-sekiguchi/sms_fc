@@ -1,5 +1,4 @@
 .article {
-  box-shadow: var(--dropShadowS);
   border-radius: var(--borderRadius);
   overflow: hidden;
   .article__cover {

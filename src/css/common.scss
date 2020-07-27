@@ -1,6 +1,7 @@
 @import "libraries-frontend-framelunch/css/_reset.css";
 @import "./common/_variables.css";
 @import "./common/_grid.css";
+@import "./common/_color.scss";
 @import "../components/parts/loading/loading.css";
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
@@ -72,7 +73,7 @@ img {
 }
 
 .inner {
-	margin: 0 auto;
+  margin: 0 auto;
   @media (--not-sp) {
     width: calc(1140 / 1280 * 100%);
     max-width: 1140px;

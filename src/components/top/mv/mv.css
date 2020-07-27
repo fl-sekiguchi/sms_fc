@@ -2,10 +2,6 @@
   @media (--not-sp) {
     margin-top: -100px;
   }
-
-  .mv__image {
-    box-shadow: var(--dropShadow);
-  }
 }
 
 .header {

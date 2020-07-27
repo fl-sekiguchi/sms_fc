@@ -3,7 +3,6 @@
         .items {
           .item {
             display: flex;
-            box-shadow: var(--dropShadowS);
             border-radius: var(--borderRadius);
             overflow: hidden;
             &:not(:first-of-type) {

@@ -1,5 +1,4 @@
 .card {
-  box-shadow: var(--dropShadowS);
   border-radius: var(--borderRadius);
   overflow: hidden;
   .card__body {

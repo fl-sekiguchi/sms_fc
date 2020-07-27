@@ -6,7 +6,6 @@
     margin-right: auto;
   }
   .article__cover {
-    box-shadow: var(--dropShadowL);
     position: relative;
     border-radius: var(--borderRadius);
     overflow: hidden;

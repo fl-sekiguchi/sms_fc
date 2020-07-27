@@ -1,5 +1,5 @@
   <div class="link">
-    <div class="base link__base -bgColor2">
+    <div class="base link__base -bgColor2 -dropshadow1">
       <div class="inner">
         <ul class="link__items">
           <%
@@ -16,7 +16,7 @@
             ]
           %>
           <% links.forEach(function (value, key) { _%>
-          <li class="link__items-item"><a href="<%- value.href %>">
+          <li class="link__items-item"><a href="<%- value.href %>" class="-dropshadow1">
             <div class="link-icon link-icon--<%- value.name %>"><i class="<%- value.fontawesome %> -textColor1"></i></div>
             <p class="link-text -textColor1"><%- value.text %></p>
           </a></li>

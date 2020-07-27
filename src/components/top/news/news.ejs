@@ -1,5 +1,5 @@
   <div class="news">
-    <div class="base news__base -bgColor3">
+    <div class="base news__base -bgColor3 -dropshadow1">
       <div class="inner">
         <div class="news__content">
           <h2 class="news-title -textColor2">NEWS</h2>
@@ -15,7 +15,7 @@
               %>
               <% news.forEach(function (value, key) { _%>
               <div class="col6 news-item">
-                <a class="news-inner" href="/news_detail.html">
+                <a class="news-inner -dropshadow2" href="/news_detail.html">
                   <div class="news__head">
                     <p class="date news__head-date">2020.01.01</p>
                     <%- include('../../parts/tag/tag.ejs', { conf, type: "news" }) %>

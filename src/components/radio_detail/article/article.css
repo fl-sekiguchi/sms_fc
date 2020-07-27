@@ -36,7 +36,6 @@
 
 .article__cover {
   position: relative;
-  box-shadow: var(--dropShadowL);
   border-radius: var(--borderRadius);
   overflow: hidden;
   margin-top: 50px;
