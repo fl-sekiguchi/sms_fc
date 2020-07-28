@@ -6,8 +6,6 @@
   --custom1-textColor5: #4c5e94;
   --custom1-textColor6: #fff;
   --custom1-textColor7: #6ed8db;
-  --custom1-borderColor1: #4c5e94;
-  --custom1-borderColor2: #ecf6fb;
   --custom1-bgColor1: #6ec5cb;
   --custom1-bgColor2: #abe8ef;
   --custom1-bgColor2OnlySp: #abe8ef;
@@ -19,6 +17,11 @@
   --custom1-bgColor8: #6ed8db;
   --custom1-bgColor9: #2a3b73;
   --custom1-bgColor10: #ecf6fb;
+  --custom1-borderColor1: #4c5e94;
+  --custom1-borderColor2: #ecf6fb;
+  --custom1-buttonBgColor1: #2a3b73;
+  --custom1-buttonBgColor2: #ecf6fb;
+  --custom1-buttonBgColor3: #734a2a;
   --custom1-dropShadow1: 0 0 20px 0 rgba(42, 59, 115, 0.4);
   --custom1-dropShadow2: 0 0 20px 0 rgba(42, 59, 115, 0.1);
   --custom1-dropShadow3: 0 0 60px 0 rgba(42, 59, 115, 0.2);
@@ -30,8 +33,6 @@
   --custom2-textColor5: #000;
   --custom2-textColor6: #000;
   --custom2-textColor7: #000;
-  --custom2-borderColor1: #000;
-  --custom2-borderColor2: #000;
   --custom2-bgColor1: #000;
   --custom2-bgColor2: #000;
   --custom2-bgColor2OnlySp: #000;
@@ -43,6 +44,11 @@
   --custom2-bgColor8: #fff;
   --custom2-bgColor9: #ccc;
   --custom2-bgColor10: #fff;
+  --custom2-borderColor1: #000;
+  --custom2-borderColor2: #000;
+  --custom2-buttonBgColor1: #2a3b73;
+  --custom2-buttonBgColor2: #fff;
+  --custom2-buttonBgColor3: #2a3b73;
   --custom2-dropShadow1: 0 0 20px 0 rgba(0, 0, 0, 0.4);
   --custom2-dropShadow2: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   --custom2-dropShadow3: 0 0 60px 0 rgba(0, 0, 0, 0.2);
@@ -72,6 +78,9 @@ body {
       }
       .-textColor6 {
         color: var(--custom#{$i}-textColor6);
+      }
+      .-textColor7 {
+        color: var(--custom#{$i}-textColor7);
       }
       .-borderColor1 {
         border-color: var(--custom#{$i}-borderColor1);
@@ -133,7 +142,16 @@ body {
         box-shadow: var(--custom#{$i}-dropShadow1);
       }
 
-      .button,
+      .button {
+        background-color: var(--custom#{$i}-buttonBgColor1);
+        &.button--color2 {
+          background-color: var(--custom#{$i}-buttonBgColor2);
+        }
+        &.button--color3 {
+          background-color: var(--custom#{$i}-buttonBgColor3);
+        }
+      }
+
       .date {
         background-color: var(--custom#{$i}-bgColor6);
       }
@@ -215,19 +233,19 @@ body {
         }
         &[name="ques1"] {
           input[type="submit"] {
-            background-color: var(--custom#{$i}-bgColor6);
+            background-color: var(--custom#{$i}-buttonBgColor1);
           }
         }
         &[name="ques2"] {
           input[type="submit"] {
             color: var(--custom#{$i}-textColor2);
-            background-color: var(--custom#{$i}-bgColor10);
+            background-color: var(--custom#{$i}-buttonBgColor2);
             border: 1px solid var(--custom#{$i}-borderColor2);
           }
         }
         .aspform_button {
           input[type="submit"] {
-            background-color: var(--custom#{$i}-bgColor6);
+            background-color: var(--custom#{$i}-buttonBgColor1);
           }
         }
       }

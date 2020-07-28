@@ -8,6 +8,14 @@
   border-radius: 5px;
   font-size: 24px;
   border: none;
+  cursor: pointer;
+
+  &.button--w100 {
+    width: 100%;
+  }
+  &.button--square {
+    border-radius: 0;
+  }
 
   @media (--not-sp) {
     height: 50px;

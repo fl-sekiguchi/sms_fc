@@ -9,7 +9,7 @@ const conf = {
 %>
 
 <%- include('./common/_head.ejs', { conf }) %>
-<%- include('../components/header/header.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf, logoColor: 'blue' }) %>
 
 <main id="main" class="main" role="main">
   <div class="wrapper">
@@ -24,5 +24,5 @@ const conf = {
   </div>
 </main>
 
-<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('../components/footer/footer.ejs', { conf, logoColor: 'blue' }) %>
 <%- include('./common/_foot.ejs', { conf }) %>
