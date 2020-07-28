@@ -5,7 +5,9 @@
   --custom1-textColor4: #2a3b73;
   --custom1-textColor5: #4c5e94;
   --custom1-textColor6: #fff;
+  --custom1-textColor7: #6ed8db;
   --custom1-borderColor1: #4c5e94;
+  --custom1-borderColor2: #ecf6fb;
   --custom1-bgColor1: #6ec5cb;
   --custom1-bgColor2: #abe8ef;
   --custom1-bgColor2OnlySp: #abe8ef;
@@ -15,6 +17,8 @@
   --custom1-bgColor6: #2a3b73;
   --custom1-bgColor7: #fff;
   --custom1-bgColor8: #6ed8db;
+  --custom1-bgColor9: #2a3b73;
+  --custom1-bgColor10: #ecf6fb;
   --custom1-dropShadow1: 0 0 20px 0 rgba(42, 59, 115, 0.4);
   --custom1-dropShadow2: 0 0 20px 0 rgba(42, 59, 115, 0.1);
   --custom1-dropShadow3: 0 0 60px 0 rgba(42, 59, 115, 0.2);
@@ -25,7 +29,9 @@
   --custom2-textColor4: #fff;
   --custom2-textColor5: #000;
   --custom2-textColor6: #000;
+  --custom2-textColor7: #000;
   --custom2-borderColor1: #000;
+  --custom2-borderColor2: #000;
   --custom2-bgColor1: #000;
   --custom2-bgColor2: #000;
   --custom2-bgColor2OnlySp: #000;
@@ -35,6 +41,8 @@
   --custom2-bgColor6: #2a3b73;
   --custom2-bgColor7: #000;
   --custom2-bgColor8: #fff;
+  --custom2-bgColor9: #ccc;
+  --custom2-bgColor10: #fff;
   --custom2-dropShadow1: 0 0 20px 0 rgba(0, 0, 0, 0.4);
   --custom2-dropShadow2: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   --custom2-dropShadow3: 0 0 60px 0 rgba(0, 0, 0, 0.2);
@@ -68,6 +76,9 @@ body {
       .-borderColor1 {
         border-color: var(--custom#{$i}-borderColor1);
       }
+      .-borderColor2 {
+        border-color: var(--custom#{$i}-borderColor2);
+      }
       .-bgColor1 {
         background-color: var(--custom#{$i}-bgColor1);
       }
@@ -96,6 +107,12 @@ body {
       }
       .-bgColor8 {
         background-color: var(--custom#{$i}-bgColor8);
+      }
+      .-bgColor9 {
+        background-color: var(--custom#{$i}-bgColor9);
+      }
+      .-bgColor10 {
+        background-color: var(--custom#{$i}-bgColor10);
       }
       .-dropshadow1 {
         box-shadow: var(--custom#{$i}-dropShadow1);
@@ -182,18 +199,19 @@ body {
       /* シークバー(プレイ時間カラー) */
       .radio-player .bc-player-default_default .vjs-play-progress,
       .bc-player-default_default .vjs-volume-level {
-          background-color: var(--custom#{$i}-bgColor6);
+          background-color: var(--custom#{$i}-bgColor9);
       }
 
       /* シークバー(ロードカラー) */
       .radio-player .bc-player-default_default .vjs-load-progress {
-        background-color: var(--custom#{$i}-bgColor6);
+        background-color: var(--custom#{$i}-bgColor9);
       }
 
       /* CMSで展開される箇所 */
       form {
         input[type="text"],textarea {
-          background-color: var(--custom#{$i}-bgColor3);
+          background-color: var(--custom#{$i}-bgColor10);
+          border: 1px solid var(--custom#{$i}-borderColor2);
         }
         &[name="ques1"] {
           input[type="submit"] {
@@ -203,7 +221,8 @@ body {
         &[name="ques2"] {
           input[type="submit"] {
             color: var(--custom#{$i}-textColor2);
-            background-color: var(--custom#{$i}-bgColor3);
+            background-color: var(--custom#{$i}-bgColor10);
+            border: 1px solid var(--custom#{$i}-borderColor2);
           }
         }
         .aspform_button {
@@ -215,7 +234,7 @@ body {
       .pager {
         li {
           a {
-            color: var(--custom#{$i}-textColor2);
+            color: var(--custom#{$i}-textColor4);
           }
           span {
             background-color: var(--custom#{$i}-bgColor6);
