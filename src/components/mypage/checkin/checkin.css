@@ -1,7 +1,7 @@
 .checkin {
   margin-top: 50px;
   background-color: #fff;
-  padding: 60px;
+  padding: 60px 0;
   border-radius: var(--borderRadius);
   overflow: hidden;
 
@@ -25,17 +25,54 @@
     margin-top: 40px;
     overflow: hidden;
     .checkin__items {
+      width: 636px;
+      background-image: url("../../../images/mypage/checkin_bg.png");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
       display: flex;
-      margin-left: -25px;
+      margin: 0 auto;
+
+      @media (--tb-h) {
+        width: 550px;
+      }
+
+      @media (--tb) {
+        width: 350px;
+      }
 
       @media (--sp) {
-        margin-left: -15px;
+        width: 280px;
       }
+
       .checkin__items-item {
-        margin-left: 25px;
+        width: 200px;
+
+        @media (--tb-h) {
+          width: 173px;
+        }
+
+        @media (--tb) {
+          width: 110px;
+        }
 
         @media (--sp) {
-          margin-left: 15px;
+          width: 88px;
+        }
+
+        &:not(:first-of-type) {
+          margin-left: 18px;
+
+          @media (--tb-h) {
+            margin-left: 16px;
+          }
+
+          @media (--tb) {
+            margin-left: 10px;
+          }
+
+          @media (--sp) {
+            margin-left: 8px;
+          }
         }
       }
     }

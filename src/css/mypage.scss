@@ -12,3 +12,29 @@
 @import "../components/mypage/qrcode/qrcode.css";
 @import "../components/mypage/checkin/checkin.css";
 @import "../components/mypage/member/member.css";
+
+.mypage-main {
+	width: 700px;
+
+	@media (--tb-h) {
+		width: 600px;
+	}
+
+	@media (--tb) {
+		width: 400px;
+	}
+
+  @media (--sp) {
+    width: 100%;
+  }
+}
+
+.maypage-member {
+	flex: 1;
+	margin-left: 25px;
+
+  @media (--sp) {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}

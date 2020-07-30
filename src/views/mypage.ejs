@@ -18,13 +18,13 @@ const conf = {
       <div class="inner">
         <%- include('../components/mypage/head/head.ejs', { conf }) %>
         <div class="row mypage-detail">
-          <div class="col8">
+          <div class="mypage-main">
             <%- include('../components/mypage/card/card.ejs', { conf }) %>
             <%- include('../components/mypage/favorite/favorite.ejs', { conf }) %>
             <%- include('../components/mypage/qrcode/qrcode.ejs', { conf }) %>
             <%- include('../components/mypage/checkin/checkin.ejs', { conf }) %>
           </div>
-          <div class="col4">
+          <div class="maypage-member">
             <%- include('../components/mypage/member/member.ejs', { conf }) %>
           </div>
         </div>

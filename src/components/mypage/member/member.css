@@ -10,6 +10,10 @@
   .member-title {
     font-size: 24px;
 
+    @media (--tb) {
+    	font-size: 22px;
+    }
+
     @media (--sp) {
       font-size: 14px;
       text-align: center;
@@ -41,6 +45,10 @@
         font-size: 18px;
         text-decoration: none;
         display: block;
+
+        @media (--tb) {
+        	font-size: 16px;
+        }
 
         @media (--sp) {
           font-size: 12px;
