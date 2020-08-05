@@ -1,0 +1,48 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'kujibiki.css',
+    image: imagePath,
+    color: '1'
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main" role="main">
+  <div class="wrapper">
+    <div class="base base--main">
+      <div class="inner">
+        <%- include('../components/kujibiki/head/head.ejs', { conf }) %>
+        <%- include('../components/kujibiki/article/article.ejs', { conf }) %>
+        <%- include('../components/kujibiki/result/result.ejs', { conf }) %>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+	let push = document.getElementsByClassName('article-button')[0];
+	let result = document.getElementsByClassName('result')[0];
+	let win = document.getElementsByClassName('result-win')[0];
+	let lose = document.getElementsByClassName('result-lose')[0];
+	let close = document.getElementsByClassName('result-close')[0];
+	let fortune;
+	push.addEventListener('click', () => {
+		result.style.display = "block";
+		fortune = Math.random();
+		if (fortune > 0.5) {
+			win.style.display = "block";
+		} else {
+			lose.style.display = "block";
+		}
+	})
+	close.addEventListener('click', () => {
+		result.style.display = "none";
+		win.style.display = "none";
+		lose.style.display = "none";
+	})
+</script>
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

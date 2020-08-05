@@ -1,0 +1,28 @@
+<%
+const conf = {
+    title : 'top',
+    description : 'This is top page',
+    style: 'wallpaper.css',
+    image: imagePath,
+    color: '1'
+};
+%>
+
+<%- include('./common/_head.ejs', { conf }) %>
+<%- include('../components/header/header.ejs', { conf }) %>
+
+<main id="main" class="main" role="main">
+  <div class="wrapper">
+    <div class="base base--main">
+      <div class="inner">
+        <%- include('../components/wallpaper/head/head.ejs', { conf }) %>
+        <%- include('../components/wallpaper/list/list.ejs', { conf }) %>
+		<%- include('../components/parts/pagination/pagination.ejs', { conf }) %>
+		<%- include('../components/wallpaper/filter/filter.ejs', { conf }) %>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('../components/footer/footer.ejs', { conf }) %>
+<%- include('./common/_foot.ejs', { conf }) %>

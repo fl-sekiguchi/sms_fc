@@ -1,0 +1,76 @@
+.wallpaper__list {
+  .wallpaper__item {
+    margin-bottom: 40px;
+
+    @media (--sp) {
+      margin-bottom: 0;
+	}
+    .wallpaper-inner {
+      display: block;
+      position: relative;
+      text-decoration: none;
+      box-shadow: var(--custom1-dropShadowS);
+      border-radius: 5px;
+	  overflow: hidden;
+	  @media (--sp) {
+		border-radius: 0;
+	  }
+      .wallpaper__item-image {
+		  border-radius: 5px;
+		  height: 260px;
+		  overflow: hidden;
+		  @media (--sp) {
+			height: 60vw;
+		  }
+	  }
+      .wallpaper__item-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+      }
+      .wallpaper__body {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		height: 90px;
+        background-color: var(--custom1-bgColor7);
+		padding: 15px;
+		@media (--sp) {
+			height: 16vw;
+		}
+        .wallpaper__item-text {
+          font-size: 18px;
+          color: var(--custom1-textColor3);
+          font-family: var(--fontNotoSansJP);
+		  font-weight: bold;
+		  line-height: 1.8;
+		  text-align: center;
+
+          @media (--sp) {
+            font-size: 3.2vw;
+          }
+        }
+      }
+    }
+  }
+  .wallpaper__item:last-child, .wallpaper__item:nth-last-child(2) {
+	margin-bottom: 0;
+	}
+	@media (--sp) {
+		margin-bottom: 8vw;
+	  }
+}
+
+.pagination {
+  @media (--not-sp) {
+    padding-top: 75px;
+    padding-bottom: 90px;
+  }
+}
+
+.filter {
+	@media (--sp) {
+		display: none;
+	  }
+}

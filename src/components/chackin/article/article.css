@@ -1,0 +1,126 @@
+.article {
+    margin-left: auto;
+    margin-right: auto;
+    @media (--not-sp) {
+        width: 100%;
+    }
+    @media (--sp) {
+		margin-bottom: 9.3vw;
+    }
+    .article__cover {
+        position: relative;
+        .article__cover-image {
+            border-radius: var(--borderRadius);
+        }
+        .article__cover-date {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .article__body {
+		background-color: var(--custom1-bgColor7);
+		padding: 7.8% 19.5%;
+        @media (--sp) {
+			border-radius: var(--borderRadius);
+			padding: 16vw 5.33vw 0;
+		}
+		.article-image {
+			width: 24.4%;
+			margin: 0 auto 3.9%;
+			@media (--sp) {
+				width: 33.3vw;
+				margin: 0 auto 10%;
+			}
+			img {
+				max-width: 100%;
+			}
+		}
+        .article-title {
+            font-size: 24px;
+            font-family: var(--fontNotoSansJP);
+            color: var(--textColor2);
+            font-weight: 600;
+            line-height: 1.4;
+			text-align: center;
+			margin-bottom: 7.8%;
+            @media (--sp) {
+				font-size: 3.73vw;
+				margin-bottom: 10.67vw;
+            }
+        }
+        .article-text {
+            font-size: 18px;
+            font-family: var(--fontNotoSansJP);
+            color: var(--textColor2);
+            line-height: 1.6;
+            margin-top: 30px;
+
+            @media (--sp) {
+                font-size: 2.93vw;
+                margin: 2.93vw auto 0;
+                padding-bottom: 14vw;
+            }
+		}
+		.checkin-list {
+			margin-top: 3.9%;
+			@media (--sp) {
+				margin-top: 7.7%;
+				padding-bottom: 7.7%;
+			}
+	
+			.checkin__items {
+				display: flex;
+				background-image: url('/images/dummy/chackin_bg.jpg');
+				background-size: cover;
+				width: 100%;
+				height: (100% * ( 215.5 / 625.88 ));
+				.checkin__items-item {
+					width: 31.4465%;
+					margin-right: 2.83%;
+						&:last-child {
+							margin-right: 0;
+						}
+					.checkin__items-inner {
+						width: 100%;
+						img {
+							max-width: 100;
+						}
+					}
+				}
+			}
+		}
+    }
+
+    .article__btn {
+        text-align: center;
+        @media (--not-sp) {
+            margin-top: 50px;
+        }
+
+        .article__btn-bt {
+			display: inline-flex;
+			padding: 2.86% 5.57%;
+			@media (--sp) {
+				width: 42.6vw;
+				font-size: 3.73vw;
+				padding: 2.67vw 0;
+			}
+        }
+	}
+	.article__foot {
+		text-align: center;
+		.article__back {
+			width: 15.6%;
+			margin: 7.8% auto;
+			font-size: 18px;
+			padding: 1.37% 2.73%;
+			@media (--sp) {
+				width: 30.67vw;
+				padding: 2.4vw 0;
+				font-size: 3.73vw;
+			}
+		}
+	}
+}
