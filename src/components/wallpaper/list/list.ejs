@@ -1,0 +1,27 @@
+<div class="wallpaper__list">
+  <div class="row">
+    <%
+      const list = [
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+        { image: "photo_image.jpg" },
+      ]
+    %>
+    <% list.forEach(function (value, key) { _%>
+    <div class="col6 wallpaper__item">
+      <a class="wallpaper-inner" href="/wallpaper_detail.html">
+        <!-- <p class="date wallpaper__item-date">2020.01.01</p> -->
+        <p class="wallpaper__item-image"><img src="<%- conf.image %>/dummy/<%- value.image %>" alt=""></p>
+        <div class="wallpaper__body">
+          <p class="wallpaper__item-text">テキストテテキストテキストテキスト</p>
+        </div>
+      </a>
+    </div>
+    <% }); _%>
+  </div>
+</div>

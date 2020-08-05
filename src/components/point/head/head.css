@@ -1,0 +1,5 @@
+.head {
+  @media (--sp) {
+    margin-bottom: 15px;
+  }
+}

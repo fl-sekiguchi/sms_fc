@@ -1,0 +1,6 @@
+.head {
+	position: relative;
+	@media (--sp) {
+	  margin-bottom: 15px;
+	}
+  }

@@ -1,0 +1,39 @@
+@import "./common/_global.css";
+@import "./common/_variables.css";
+@import "./common/_grid.css";
+@import "../components/parts/button.css";
+@import "../components/parts/pagination/pagination.css";
+@import "../components/point/head/head.css";
+@import "../components/point/article/article.css";
+
+.base {
+	margin: 0 auto;
+  @media (--not-sp) {
+    width: calc(1280 / 1600 * 100%);
+    max-width: 1280px;
+  }
+
+  @media (--tb-h) {
+    width: calc(90%);
+  }
+
+  @media (--tb) {
+    width: calc(90%);
+  }
+
+  &.base--white {
+    background-color: #fff;
+    box-shadow: var(--dropShadow);
+
+    @media (--not-sp) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @media (--sp) {
+	 background-color:  var(--bgColor3);
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+  }
+}
