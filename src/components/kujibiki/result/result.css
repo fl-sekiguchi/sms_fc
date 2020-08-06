@@ -44,7 +44,7 @@
         margin: 0 0 5vh;
         text-align: center;
 		font-size: 2.8vw;
-		font-family: var(--fontMonteserrat);
+		font-family: var(--fontMontserrat);
         @media (--sp) {
             margin: 10vh 0 5vh;
             font-size: 12vw;
