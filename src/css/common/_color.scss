@@ -259,6 +259,17 @@ body {
           }
         }
       }
+
+      /* favorite */
+      .-favorite {
+        .select form {
+          background-color: #eee;
+        }
+
+        .confirm form {
+          background-color: #ccc;
+        }
+      }
     }
   }
 }
