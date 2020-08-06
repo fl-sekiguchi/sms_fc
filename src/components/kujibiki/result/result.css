@@ -6,8 +6,6 @@
     width: 100%;
     height: 100%;
     padding: 4.67vw;
-
-    /* background-color: var(--custom1-bgColor6); */
 	z-index: 30;
 	overflow-y: scroll;
     @media (--sp) {

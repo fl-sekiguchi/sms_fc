@@ -71,6 +71,7 @@
 	.button {
 		margin: 5.3vw auto 0;
 		width: 43.067vw;
+		max-width: 620px;
 	}
   }
 
