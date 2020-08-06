@@ -21,6 +21,7 @@
   --custom1-bgColor10: #ecf6fb;
   --custom1-borderColor1: #4c5e94;
   --custom1-borderColor2: #ecf6fb;
+  --custom1-borderColor3: #4c5e94;
   --custom1-buttonBgColor1: #2a3b73;
   --custom1-buttonBgColor2: #ecf6fb;
   --custom1-buttonBgColor3: #734a2a;
@@ -49,6 +50,7 @@
   --custom2-bgColor10: #fff;
   --custom2-borderColor1: #000;
   --custom2-borderColor2: #000;
+  --custom2-borderColor3: #fff;
   --custom2-buttonBgColor1: #2a3b73;
   --custom2-buttonBgColor2: #fff;
   --custom2-buttonBgColor3: #2a3b73;
@@ -93,6 +95,9 @@ body {
       }
       .-borderColor2 {
         border-color: var(--custom#{$i}-borderColor2);
+      }
+      .-borderColor3 {
+        border-color: var(--custom#{$i}-borderColor3);
       }
       .-bgColor1 {
         background-color: var(--custom#{$i}-bgColor1);
@@ -330,7 +335,7 @@ body {
 					justify-content: center;
 					width: 70%;
 					padding: 0 16% 0 6%;
-					color: var(--custom#{$i}-bgColor6);
+					color: var(--custom#{$i}-textColor4);
 					@media (--sp) {
 						width: 73%;
 					}
@@ -351,7 +356,7 @@ body {
 				height: 40px;
 				margin: -20px 0 0 2px;
 				background-color: var(--custom#{$i}-bgColor7);
-				border: 2px solid var(--custom#{$i}-borderColor1);
+				border: 2px solid var(--custom#{$i}-borderColor3);
 				border-radius: 50%;
 			}
 			input[type="radio"]:checked + label .recommend-select__info::after {
