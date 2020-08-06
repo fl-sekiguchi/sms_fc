@@ -43,7 +43,7 @@
 			background-color: var(--custom1-bgColor7);
 			border-radius: 5px;
 			margin: 3px;
-			box-shadow: var(--custom1-dropShadowS);
+			box-shadow: var(--custom1-dropShadow2);
 			.recommend-select__icon {
 				width: 30%;
 				@media (--sp) {
@@ -176,7 +176,7 @@
 			max-width: 230px;
 			padding: 2.86% 0;
 			margin: 0 3.52%;
-			box-shadow: var(--custom1-dropShadowS);
+			box-shadow: var(--custom1-dropShadow2);
 			@media (--sp) {
 				width: 42.6vw;
 				max-width: 320px;
