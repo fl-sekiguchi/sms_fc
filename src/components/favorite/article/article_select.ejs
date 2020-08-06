@@ -1,28 +1,112 @@
 <div class="article select">
-  <div class="article-options">
-	<% for (let index = 0; index < 6; index += 1) { %>
-    <span class="clearfix radio">
-      <input id="radio01-0<%- index %>" type="radio" name="code" value="0<%- index %>" data-member="0<%- index %>" data-collcode="" data-key="" />
-      <label for="radio01-0<%- index %>" class="list-input-item">
-        <div class="recommend-select__inner">
-          <div class="recommend-select__icon">
-            <div class="recommend-select__icon-in">
-              <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+
+  <form name="collform" method="GET" action="/s/k46o/collection">
+      <span class="clearfix radio">
+        <input id="radio01-01" type="radio" name="code" value="01" data-member="01" data-collcode="" data-key="" />
+        <label for="radio01-01" class="list-input-item">
+          <div class="recommend-select__inner">
+            <div class="recommend-select__icon">
+              <div class="recommend-select__icon-in">
+                <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+              </div>
+            </div>
+            <div class="recommend-select__info">
+              <div class="name">テキストテキスト</div>
+              <div class="name-en">TEXTTEXT</div>
             </div>
           </div>
-          <div class="recommend-select__info">
-            <div class="name">テキストテキスト</div>
-            <div class="name-en">TEXTTEXT</div>
+        </label>
+      </span>
+      <span class="clearfix radio">
+        <input id="radio01-02" type="radio" name="code" value="02" data-member="02" data-collcode="" data-key="" />
+        <label for="radio01-02" class="list-input-item">
+          <div class="recommend-select__inner">
+            <div class="recommend-select__icon">
+              <div class="recommend-select__icon-in">
+                <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+              </div>
+            </div>
+            <div class="recommend-select__info">
+              <div class="name">テキストテキスト</div>
+              <div class="name-en">TEXTTEXT</div>
+            </div>
           </div>
-        </div>
-      </label>
-	</span>
-	<% }%>
-  </div>
-  <div class="article__btn">
-    <a class="button article__btn-bt" href="/">SELECT</a>
-    <a class="button article__btn-bt btn-white" href="/">BACK</a>
-  </div>
+        </label>
+      </span>
+      <span class="clearfix radio">
+        <input id="radio01-03" type="radio" name="code" value="03" data-member="03" data-collcode="" data-key="" />
+        <label for="radio01-03" class="list-input-item">
+          <div class="recommend-select__inner">
+            <div class="recommend-select__icon">
+              <div class="recommend-select__icon-in">
+                <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+              </div>
+            </div>
+            <div class="recommend-select__info">
+              <div class="name">テキストテキスト</div>
+              <div class="name-en">TEXTTEXT</div>
+            </div>
+          </div>
+        </label>
+      </span>
+      <span class="clearfix radio">
+        <input id="radio01-04" type="radio" name="code" value="04" data-member="04" data-collcode="" data-key="" />
+        <label for="radio01-04" class="list-input-item">
+          <div class="recommend-select__inner">
+            <div class="recommend-select__icon">
+              <div class="recommend-select__icon-in">
+                <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+              </div>
+            </div>
+            <div class="recommend-select__info">
+              <div class="name">テキストテキスト</div>
+              <div class="name-en">TEXTTEXT</div>
+            </div>
+          </div>
+        </label>
+      </span>
+      <span class="clearfix radio">
+        <input id="radio01-05" type="radio" name="code" value="05" data-member="05" data-collcode="" data-key="" />
+        <label for="radio01-05" class="list-input-item">
+          <div class="recommend-select__inner">
+            <div class="recommend-select__icon">
+              <div class="recommend-select__icon-in">
+                <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+              </div>
+            </div>
+            <div class="recommend-select__info">
+              <div class="name">テキストテキスト</div>
+              <div class="name-en">TEXTTEXT</div>
+            </div>
+          </div>
+        </label>
+      </span>
+      <span class="clearfix radio">
+        <input id="radio01-06" type="radio" name="code" value="06" data-member="06" data-collcode="" data-key="" />
+        <label for="radio01-06" class="list-input-item">
+          <div class="recommend-select__inner">
+            <div class="recommend-select__icon">
+              <div class="recommend-select__icon-in">
+                <img src="<%- conf.image %>/dummy/favorite.jpg" alt="" />
+              </div>
+            </div>
+            <div class="recommend-select__info">
+              <div class="name">テキストテキスト</div>
+              <div class="name-en">TEXTTEXT</div>
+            </div>
+          </div>
+        </label>
+      </span>
+      <input type="hidden" name="mode" value="CON">
+      <input type="hidden" name="cd" value="favorite">
+      <input type="hidden" name="key" value="1">
+      <div class="btn-submit"><span class="btn btn-disabled">登録確認</span></div>
+      <div class="btn-reset"><div class="btn-reset_in"><a href="/s/k46o/collection/favorite?ima=0000">もどる</a></div></div>
+
+      <input type="hidden" name="ima" value="0000">
+
+  </form>
+
   <div class="article__foot">
     <a href="" class="button article__back">
       MY PAGE

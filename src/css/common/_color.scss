@@ -6,6 +6,7 @@
   --custom1-textColor5: #4c5e94;
   --custom1-textColor6: #fff;
   --custom1-textColor7: #6ed8db;
+  --custom1-textColor8: #fff;
   --custom1-bgColor1: #6ec5cb;
   --custom1-bgColor2: #abe8ef;
   --custom1-bgColor2OnlySp: #abe8ef;
@@ -34,6 +35,7 @@
   --custom2-textColor5: #000;
   --custom2-textColor6: #000;
   --custom2-textColor7: #000;
+  --custom2-textColor8: #fff;
   --custom2-bgColor1: #000;
   --custom2-bgColor2: #000;
   --custom2-bgColor2OnlySp: #000;
@@ -83,6 +85,9 @@ body {
       .-textColor7 {
         color: var(--custom#{$i}-textColor7);
       }
+      .-textColor8 {
+        color: var(--custom#{$i}-textColor8);
+      }
       .-borderColor1 {
         border-color: var(--custom#{$i}-borderColor1);
       }
@@ -113,7 +118,7 @@ body {
         background-color: var(--custom#{$i}-bgColor6);
       }
       .-bgColor7 {
-        background-color: var(--custom#{$i}-bgColor7);
+        background-color: var(--custom#{$i}-bgColor7) !important;
       }
       .-bgColor7OnlySp {
 		@media (--sp) {
@@ -302,10 +307,10 @@ body {
 			}
 			.recommend-select__inner {
 				display: flex;
-				background-color: var(--custom1-bgColor7);
+				background-color: var(--custom#{$i}-bgColor7);
 				border-radius: 5px;
 				margin: 3px;
-				box-shadow: var(--custom1-dropShadow2);
+				box-shadow: var(--custom#{$i}-dropShadow2);
 				.recommend-select__icon {
 					width: 30%;
 					@media (--sp) {
@@ -325,7 +330,7 @@ body {
 					justify-content: center;
 					width: 70%;
 					padding: 0 16% 0 6%;
-					color: var(--custom1-bgColor6);
+					color: var(--custom#{$i}-bgColor6);
 					@media (--sp) {
 						width: 73%;
 					}
@@ -345,8 +350,8 @@ body {
 				width: 40px;
 				height: 40px;
 				margin: -20px 0 0 2px;
-				background-color: var(--custom1-bgColor7);
-				border: 2px solid var(--custom1-borderColor1);
+				background-color: var(--custom#{$i}-bgColor7);
+				border: 2px solid var(--custom#{$i}-borderColor1);
 				border-radius: 50%;
 			}
 			input[type="radio"]:checked + label .recommend-select__info::after {
@@ -357,20 +362,20 @@ body {
 				width: 20px;
 				height: 20px;
 				margin: -10px 0 0 2px;
-				border: 2px solid var(--custom1-borderColor1);
+				border: 2px solid var(--custom#{$i}-borderColor1);
 				border-radius: 50%;
-				background-color: var(--custom1-bgColor6);
+				background-color: var(--custom#{$i}-bgColor6);
 				padding: 5px;
 			}
 			input[type="radio"]:checked + label .recommend-select__inner {
-				border: 3px solid var(--custom1-borderColor1);
+				border: 3px solid var(--custom#{$i}-borderColor1);
 				margin: 0;
 			}
 
 			@media (--not-sp) {
 				margin-top: 50px;
 			}
-	
+
 			@media (--sp) {
 				padding-top: 13.3vw;
 				display: flex;
@@ -383,14 +388,14 @@ body {
 				max-width: 230px;
 				padding: 1.64% 0;
 				margin: 0 3.52%;
-				background-color: var(--custom1-buttonBgColor1);
-				box-shadow: var(--custom1-dropShadow2);
+				background-color: var(--custom#{$i}-buttonBgColor1);
+				box-shadow: var(--custom#{$i}-dropShadow2);
 				border-radius: 5px;
 				&:nth-of-type(2) {
 					margin-bottom: 0;
-					background-color: var(--custom2-buttonBgColor2);
+					background-color: #fff;
 					> * {
-						color: var(--custom1-textColor2);
+						color: var(--custom#{$i}-textColor2);
 					}
 					a {
 						text-decoration: none;
@@ -424,7 +429,7 @@ body {
 					@media (--not-sp) {
 						letter-spacing: .05em;
 					  }
-					
+
 					@media (--sp) {
 						font-size: 3.73vw;
 					}
@@ -452,7 +457,7 @@ body {
 			flex-direction: column;
 			align-items: center;
 		}
-		
+
 		@media (--sp) {
 			padding-top: 13.3vw;
 			display: flex;
@@ -465,14 +470,14 @@ body {
 			max-width: 230px;
 			padding: 1.64% 0;
 			margin: 0 3.52%;
-			background-color: var(--custom1-buttonBgColor1);
-			box-shadow: var(--custom1-dropShadow2);
+			background-color: var(--custom#{$i}-buttonBgColor1);
+			box-shadow: var(--custom#{$i}-dropShadow2);
 			border-radius: 5px;
 			&:nth-of-type(2) {
 				margin-bottom: 0;
-				background-color: var(--custom1-buttonBgColor2);
+				background-color: var(--custom#{$i}-buttonBgColor2);
 				> * {
-					color: var(--custom1-textColor2);
+					color: var(--custom#{$i}-textColor2);
 				}
 				a {
 					text-decoration: none;
@@ -481,7 +486,7 @@ body {
 			@media (--not-sp) {
 				margin-top: 50px;
 			}
-			
+
 			@media (--sp) {
 				width: 42.6vw;
 				max-width: 320px;
@@ -507,7 +512,7 @@ body {
 				@media (--not-sp) {
 					letter-spacing: .05em;
 				  }
-				
+
 				@media (--sp) {
 					font-size: 3.73vw;
 				}
