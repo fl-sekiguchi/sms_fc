@@ -14,6 +14,7 @@
   --custom1-bgColor5: #6ed8db;
   --custom1-bgColor6: #2a3b73;
   --custom1-bgColor7: #fff;
+  --custom1-bgColor7OnlySp: #fff;
   --custom1-bgColor8: #6ed8db;
   --custom1-bgColor9: #2a3b73;
   --custom1-bgColor10: #ecf6fb;
@@ -113,6 +114,11 @@ body {
       }
       .-bgColor7 {
         background-color: var(--custom#{$i}-bgColor7);
+      }
+      .-bgColor7OnlySp {
+		@media (--sp) {
+		  background-color: var(--custom#{$i}-bgColor7);
+		}
       }
       .-bgColor8 {
         background-color: var(--custom#{$i}-bgColor8);

@@ -9,7 +9,6 @@
       display: block;
       position: relative;
       text-decoration: none;
-      box-shadow: var(--custom1-dropShadowS);
       border-radius: 5px;
 	  overflow: hidden;
 	  @media (--sp) {
@@ -34,14 +33,12 @@
 		  justify-content: center;
 		  align-items: center;
 		height: 90px;
-        background-color: var(--custom1-bgColor7);
 		padding: 15px;
 		@media (--sp) {
 			height: 16vw;
 		}
         .wallpaper__item-text {
           font-size: 18px;
-          color: var(--custom1-textColor3);
           font-family: var(--fontNotoSansJP);
 		  font-weight: bold;
 		  line-height: 1.8;

@@ -27,13 +27,11 @@
 
     @media (--sp) {
       padding-top: 20px;
-      background-color: var(--custom1-bgColor7);
     }
 
     .article-title {
       font-size: 24px;
       font-family: var(--fontNotoSansJP);
-      color: var(--custom1-textColor2);
       font-weight: 600;
       line-height: 1.4;
 
@@ -47,7 +45,6 @@
     .article-text {
       font-size: 18px;
       font-family: var(--fontNotoSansJP);
-      color: var(--custom1-textColor2);
       line-height: 1.6;
       margin-top: 7.16%;
 

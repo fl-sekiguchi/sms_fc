@@ -22,7 +22,6 @@
 
     .article__body {
 		padding: 2.67vw 5.33vw 0;
-		background-color: var(--custom1-bgColor7);
         @media (--not-sp) {
             padding: 0 25px;
         }
@@ -32,7 +31,6 @@
         .article-title {
             font-size: 24px;
             font-family: var(--fontNotoSansJP);
-            color: var(--custom1-textColor2);
             font-weight: 600;
             line-height: 1.4;
 
@@ -51,7 +49,6 @@
                 justify-content: center;
                 align-items: center;
                 margin: 16.72% 15px 7.96%;
-                background-color: var(--custom1-bgColor3);
                 padding: 4% 0;
                 font-family: var(--fontMontserrat);
                 font-weight: bolder;
@@ -82,7 +79,6 @@
 					font-size: 22px;
 					font-weight: bold;
 					margin-bottom: 3.18%;
-					color: var(--custom1-textColor2);
                     @media (--sp) {
                         font-size: 2.93vw;
                     }
@@ -92,7 +88,6 @@
         .article-text {
             font-size: 18px;
             font-family: var(--fontNotoSansJP);
-            color: var(--custom1-textColor2);
             line-height: 1.6;
             margin-top: 30px;
 

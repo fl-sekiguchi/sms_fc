@@ -20,7 +20,6 @@
     }
 
     .article__body {
-		background-color: var(--custom1-bgColor7);
 		padding: 7.8% 19.5%;
         @media (--sp) {
 			border-radius: var(--borderRadius);
@@ -40,7 +39,6 @@
         .article-title {
             font-size: 24px;
             font-family: var(--fontNotoSansJP);
-            color: var(--textColor2);
             font-weight: 600;
             line-height: 1.4;
 			text-align: center;
@@ -53,7 +51,6 @@
         .article-text {
             font-size: 18px;
             font-family: var(--fontNotoSansJP);
-            color: var(--textColor2);
             line-height: 1.6;
             margin-top: 30px;
 
